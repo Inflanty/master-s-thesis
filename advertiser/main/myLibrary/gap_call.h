@@ -26,11 +26,36 @@ static uint8_t raw_scan_rsp_data_stat[] = {
 
 #endif
 
-void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param);
-void esp_ble_gap_init_broadcasting(uint8_t *raw_adv_data);
+typedef enum{
+	ESP_BLE_OK = 1;
+	ESP_BLE_FAILED;
+}ble_response;
 
-void esp_ble_gap_init_observating();
+esp_ble_adv_params_t *adv_params_advertiser;
 
-void ble_discovery_write(uint8_t  *ble_adv, uint8_t adv_data_len, uint8_t *adv_data_len);
+//
+// Callback after gap event
+//
+ble_response esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param);
+//
+// Function initialized the broadcaster role
+//
+ble_response ble_broadcasterInit(uint8_t *raw_adv_data);
+//
+// Function starting broadcaster role
+//
+ble_response ble_broadcasterStart();
+//
+//	Function initilized the observer role
+//
+ble_response ble_observerInit();
+//
+// Function copy data from pointer one to pointwer two
+//
+ble_response ble_observerDataCopy(uint8_t  *ble_adv, uint8_t adv_data_len, uint8_t *adv_data_len);
+//
+// Function starting observer role
+//
+ble_response ble_observerStart();
 
 #endif /*_GAP_CALL_H_*/

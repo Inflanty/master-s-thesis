@@ -16,6 +16,8 @@ Master's thesis
 //#define PEER_ADDR
 //#define CONFIG_SET_RAW_ADV_DATA
 //#define NO_LOG
+//#define OBSERVER_ROLE
+//#define BROADCASTER_ROLE
 
 //System_var
 //char *MYLOG = "SYSTEM_LOG";

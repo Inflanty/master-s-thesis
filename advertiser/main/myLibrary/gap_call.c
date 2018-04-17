@@ -5,10 +5,22 @@ void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
 	uint8_t adv_name_len = 0;
 	switch (event)
 	{
-	case ESP_GAP_BLE_ADV_DATA_SET_COMPLETE_EVT          :adv_config_done &= (~adv_config_flag); 			break;
-	case ESP_GAP_BLE_SCAN_RSP_DATA_SET_COMPLETE_EVT     :adv_config_done &= (~scan_rsp_config_flag); 	break;
-	case ESP_GAP_BLE_SCAN_PARAM_SET_COMPLETE_EVT        :break;
-	case ESP_GAP_BLE_SCAN_RESULT_EVT
+	case ESP_GAP_BLE_ADV_DATA_SET_COMPLETE_EVT          :
+	ESP_LOGI("GAP CALLBACK :: Advertising parameters complete");
+	#ifdef BROADCASTER_ROLE
+	int(ble_broadcasterStart() == ESP_BLE_OK){ ; }
+	else { ; }
+	#endif
+	break;
+	case ESP_GAP_BLE_SCAN_RSP_DATA_SET_COMPLETE_EVT     : adv_config_done &= (~scan_rsp_config_flag); 	break;
+	case ESP_GAP_BLE_SCAN_PARAM_SET_COMPLETE_EVT        :
+	ESP_LOGI("GAP CALLBACK :: Scan parameters complete");
+	#ifdef OBSERVER_ROLE
+	if(ble_observerStart() == ESP_BLE_OK){ ; }
+	else{ ; }
+	#endif
+	break;
+	case ESP_GAP_BLE_SCAN_RESULT_EVT										:
 		esp_ble_gap_cb_param_t *scan_result = (esp_ble_gap_cb_param_t *)param;
 		switch (scan_result->scan_rst.search_evt)
 		{
@@ -16,15 +28,15 @@ void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
 			case ESP_GAP_SEARCH_INQ_CMPL_EVT            		:break;
 			case ESP_GAP_SEARCH_DISC_RES_EVT            		:break;
 			case ESP_GAP_SEARCH_DISC_BLE_RES_EVT        		:break;
-			case ESP_GAP_SEARCH_DISC_CMPL_EVT           		: if(scan_param_cmpl.status = ESP_BT_STATUS_SUCCESS){ ble_discovery_write(scan_result->scan_rst.ble_adv, scan_result->scan_rst.adv_data_len, adv_data_len) }else{ }; break;
-			case ESP_GAP_SEARCH_DI_DISC_CMPL_EVT        		: if(scan_param_cmpl.status = ESP_BT_STATUS_SUCCESS){ ble_discovery_write(scan_result->scan_rst.ble_adv, scan_result->scan_rst.adv_data_len, adv_data_len) }else{ }; break;
+			case ESP_GAP_SEARCH_DISC_CMPL_EVT           		: if (scan_param_cmpl.status = ESP_BT_STATUS_SUCCESS){ ble_observerDataCopy(scan_result->scan_rst.ble_adv, scan_result->scan_rst.adv_data_len, adv_data_len), ESP_LOGI("GAP CALLBACK :: Scan RESULT ready"); }else{ }; break;
+			case ESP_GAP_SEARCH_DI_DISC_CMPL_EVT        		: if (scan_param_cmpl.status = ESP_BT_STATUS_SUCCESS){ ble_observerDataCopy(scan_result->scan_rst.ble_adv, scan_result->scan_rst.adv_data_len, adv_data_len), ESP_LOGI("GAP CALLBACK :: Scan RESULT ready"); }else{ }; break;
 			case ESP_GAP_SEARCH_SEARCH_CANCEL_CMPL_EVT  		:break;
 		}
 	break;
 	case ESP_GAP_BLE_ADV_DATA_RAW_SET_COMPLETE_EVT      :break;
 	case ESP_GAP_BLE_SCAN_RSP_DATA_RAW_SET_COMPLETE_EVT :break;
-	case ESP_GAP_BLE_ADV_START_COMPLETE_EVT             :break;
-	case ESP_GAP_BLE_SCAN_START_COMPLETE_EVT            :break;
+	case ESP_GAP_BLE_ADV_START_COMPLETE_EVT             : if (param->adv_start_cmpl.status == ESP_BT_STATUS_SUCCESS){ ESP_LOGI("GAP CALLBACK :: Advertising START complete"); }; break;
+	case ESP_GAP_BLE_SCAN_START_COMPLETE_EVT            : if (param->scan_start_cmpl.status == ESP_BT_STATUS_SUCCESS){ ESP_LOGI("GAP CALLBACK :: Scan START complete"); }; break;
 	case ESP_GAP_BLE_AUTH_CMPL_EVT                      :break;
 	case ESP_GAP_BLE_KEY_EVT                            :break;
 	case ESP_GAP_BLE_SEC_REQ_EVT                       	:break;
@@ -34,8 +46,8 @@ void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
 	case ESP_GAP_BLE_LOCAL_IR_EVT                       :break;
 	case ESP_GAP_BLE_LOCAL_ER_EVT                       :break;
 	case ESP_GAP_BLE_NC_REQ_EVT                   			:break;
-	case ESP_GAP_BLE_ADV_STOP_COMPLETE_EVT              :break;
-	case ESP_GAP_BLE_SCAN_STOP_COMPLETE_EVT             :break;
+	case ESP_GAP_BLE_ADV_STOP_COMPLETE_EVT              : ESP_LOGI("GAP CALLBACK :: Advertising STOP complete"); break;
+	case ESP_GAP_BLE_SCAN_STOP_COMPLETE_EVT             : ESP_LOGI("GAP CALLBACK :: Scan STOP complete"); break;
 	case ESP_GAP_BLE_SET_STATIC_RAND_ADDR_EVT						:break;
 	case ESP_GAP_BLE_UPDATE_CONN_PARAMS_EVT             :break;
 	case ESP_GAP_BLE_SET_PKT_LENGTH_COMPLETE_EVT        :break;
@@ -48,25 +60,23 @@ void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
 	default: break;
 	}
 }
-void esp_ble_gap_init_broadcasting(uint8_t *raw_adv_data)
+ble_response ble_broadcasterInit(uint8_t *raw_adv_data)
 {
-  esp_ble_adv_params_t *adv_params_user;
-
-  adv_params_user -> adv_int_min = 0x2000;
-  adv_params_user -> adv_int_max = 0x4000;
-  adv_params_user -> adv_type = ADV_TYPE_IND;                                  /*!< Advertising type */
-  adv_params_user -> own_addr_type = BLE_ADDR_TYPE_PUBLIC;                     /*!< Owner bluetooth device address type */
+  adv_params_advertiser -> adv_int_min = 0x2000;
+  adv_params_advertiser -> adv_int_max = 0x4000;
+  adv_params_advertiser -> adv_type = ADV_TYPE_IND;                                  /*!< Advertising type */
+  adv_params_advertiser -> own_addr_type = BLE_ADDR_TYPE_PUBLIC;                     /*!< Owner bluetooth device address type */
   #ifdef PEER_ADDR
-  adv_params_user -> peer_addr[0] = 0x00;                                      /*!< Peer device bluetooth device address */
-  adv_params_user -> peer_addr[1] = 0x00;
-  adv_params_user -> peer_addr[2] = 0x00;
-  adv_params_user -> peer_addr[3] = 0x00;
-  adv_params_user -> peer_addr[4] = 0x00;
-  adv_params_user -> peer_addr[5] = 0x00;
-  adv_params_user -> peer_addr_type = BLE_ADDR_TYPE_PUBLIC;                    /*!< Peer device bluetooth device address type */
+  adv_params_advertiser -> peer_addr[0] = 0x00;                                      /*!< Peer device bluetooth device address */
+  adv_params_advertiser -> peer_addr[1] = 0x00;
+  adv_params_advertiser -> peer_addr[2] = 0x00;
+  adv_params_advertiser -> peer_addr[3] = 0x00;
+  adv_params_advertiser -> peer_addr[4] = 0x00;
+  adv_params_advertiser -> peer_addr[5] = 0x00;
+  adv_params_advertiser -> peer_addr_type = BLE_ADDR_TYPE_PUBLIC;                    /*!< Peer device bluetooth device address type */
   #endif
-  adv_params_user -> channel_map = ADV_CHNL_ALL;                               /*!< Advertising channel map */
-  adv_params_user -> adv_filter_policy = ADV_FILTER_ALLOW_SCAN_ANY_CON_ANY;    /*!< Advertising filter policy */
+  adv_params_advertiser -> channel_map = ADV_CHNL_ALL;                               /*!< Advertising channel map */
+  adv_params_advertiser -> adv_filter_policy = ADV_FILTER_ALLOW_SCAN_ANY_CON_ANY;    /*!< Advertising filter policy */
 
   #ifdef CONFIG_SET_RAW_ADV_DATA
 		esp_err_t raw_adv_ret = esp_ble_gap_config_adv_data_raw(raw_adv_data, sizeof(raw_adv_data));
@@ -79,9 +89,20 @@ void esp_ble_gap_init_broadcasting(uint8_t *raw_adv_data)
 			ESP_LOGE(GATTS_TAG, "config raw scan rsp data failed, error code = %x", raw_scan_ret);
 		}
 		adv_config_done |= scan_rsp_config_flag;
-#else
+		#endif
+
+		return ESP_BLE_OK;
 }
-void esp_ble_gap_init_observating()
+ble_response ble_broadcasterStart()
+{
+	//You can start broadcasting there
+	if(esp_ble_gap_start_advertising (*adv_params_advertiser))
+	{
+		return ESP_BLE_OK;
+	}
+	return ESP_BLE_FAILED;
+}
+ble_response ble_observerInit()
 {
 	esp_ble_scan_params_t scan_params = {.scan_type = BLE_SCAN_TYPE_PASSIVE,
 		.own_addr_type = BLE_ADDR_TYPE_PUBLIC, .scan_filter_policy = BLE_SCAN_FILTER_ALLOW_ALL,
@@ -90,10 +111,11 @@ void esp_ble_gap_init_observating()
 
 	if(esp_ble_gap_set_scan_params(scan_params) == ESP_OK)
 	{
-		;
+		return ESP_BLE_OK;
 	}
+	return ESP_BLE_FAILED;
 }
-void ble_discovery_write(uint8_t  *ble_adv, uint8_t adv_data_len, uint8_t *adv_data_len)
+ble_response ble_observerDataCopy(uint8_t  *ble_adv, uint8_t adv_data_len, uint8_t *adv_data_len)
 {
 	for(int i = 0; i < adv_data_len; i ++)
 	{
@@ -101,7 +123,19 @@ void ble_discovery_write(uint8_t  *ble_adv, uint8_t adv_data_len, uint8_t *adv_d
 		adv_data_len	++	;
 		ble_adv 			++	;
 	}
+	return ESP_BLE_OK;
 }
+ble_response ble_observerStart()
+{
+	//Scan params set,
+	//you can start observating
+	if(esp_ble_gap_start_scanning(scanDuration) == ESP_OK)
+	{
+			return ESP_BLE_OK;
+	}
+	return ESP_BLE_FAILED;
+}
+
 /////////////////////////////////////////////////////////////////////////////////// NOTES
 /*
 void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
