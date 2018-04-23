@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+esp_gap_cb	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)$/;"	function	line:3	signature:(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
+ble_broadcasterInit	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_broadcasterInit(uint8_t *raw_adv_data)$/;"	function	line:61	signature:(uint8_t *raw_adv_data)
+ble_broadcasterStart	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_broadcasterStart()$/;"	function	line:94
+ble_observerInit	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_observerInit()$/;"	function	line:103
+ble_observerDataCopy	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_observerDataCopy(uint8_t  *ble_adv, uint8_t adv_data_len, uint8_t *adv_data)$/;"	function	line:116	signature:(uint8_t *ble_adv, uint8_t adv_data_len, uint8_t *adv_data)
+ble_observerStart	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_observerStart()$/;"	function	line:126
+UV_LOG	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^void UV_LOG(char *text)$/;"	function	line:136	signature:(char *text)

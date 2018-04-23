@@ -1,0 +1,713 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+PROJECT_NAME	/home/jan/Workspace/git/masters_thesis/ble_adv/Makefile	/^PROJECT_NAME := ble_adv$/;"	macro	line:6
+tp_example_read_task	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/touch_pad.c	/^void tp_example_read_task(void *pvParameter)$/;"	function	line:5	signature:(void *pvParameter)
+tp_example_touch_pad_init	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/touch_pad.c	/^void tp_example_touch_pad_init()$/;"	function	line:64
+_PLATFORM_H_	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^#define _PLATFORM_H_$/;"	macro	line:2
+MEASURE_DONE	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    MEASURE_DONE,$/;"	enumerator	line:5	enum:__anon1
+MEASURE_READY	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    MEASURE_READY,$/;"	enumerator	line:6	enum:__anon1
+MEASURE_BLOCK	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    MEASURE_BLOCK,$/;"	enumerator	line:7	enum:__anon1
+MEASURE_NONE	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    MEASURE_NONE$/;"	enumerator	line:8	enum:__anon1
+measure_control_t	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^}measure_control_t;$/;"	typedef	line:9	typeref:enum:__anon1
+MEASURE_TYPE_XYZ	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    MEASURE_TYPE_XYZ,$/;"	enumerator	line:12	enum:__anon2
+MEASURE_TYPE_ANGLE	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    MEASURE_TYPE_ANGLE,$/;"	enumerator	line:13	enum:__anon2
+MEASURE_TYPE_SPEED	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    MEASURE_TYPE_SPEED$/;"	enumerator	line:14	enum:__anon2
+measure_type_t	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^}measure_type_t;$/;"	typedef	line:15	typeref:enum:__anon2
+measurement	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^struct measurement{$/;"	struct	line:19
+Value_1	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    measure_value_t Value_1;$/;"	member	line:20	struct:measurement
+Value_2	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    measure_value_t Value_2;$/;"	member	line:21	struct:measurement
+Value_3	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    measure_value_t Value_3;$/;"	member	line:22	struct:measurement
+Value_supp	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    measure_value_t Value_supp;$/;"	member	line:24	struct:measurement
+MeasureControl	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    measure_control_t MeasureControl;$/;"	member	line:26	struct:measurement
+measurementGlobalData	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^struct measurement *measurementGlobalData;$/;"	typedef	line:29	typeref:struct:measurement
+STORAGE_LOCAL	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    STORAGE_LOCAL,$/;"	enumerator	line:32	enum:__anon3
+STORAGE_GLOBAL	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    STORAGE_GLOBAL,$/;"	enumerator	line:33	enum:__anon3
+STORAGE_DONE	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    STORAGE_DONE,$/;"	enumerator	line:34	enum:__anon3
+STORAGE_NONE	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    STORAGE_NONE,$/;"	enumerator	line:35	enum:__anon3
+STORAGE_BREAK	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^    STORAGE_BREAK$/;"	enumerator	line:36	enum:__anon3
+storage_type_t	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.h	/^} storage_type_t;$/;"	typedef	line:37	typeref:enum:__anon3
+mes_saveValue	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.c	/^void mes_saveValue(storage_type_t storeType)$/;"	function	line:3	signature:(storage_type_t storeType)
+mes_doMeasure	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.c	/^measure_control_t mes_doMeasure(measure_type_t mType)$/;"	function	line:12	signature:(measure_type_t mType)
+mes_accelerometerRead	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.c	/^measure_control_fail_t mes_accelerometerRead()$/;"	function	line:22
+mes_angleRead	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.c	/^measure_control_fail_t mes_angleRead()$/;"	function	line:27
+mes_speedRead	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/platform.c	/^measure_control_fail_t mes_speedRead()$/;"	function	line:32
+_TOUCH_PAD_H_	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/touch_pad.h	/^#define _TOUCH_PAD_H_$/;"	macro	line:2
+TOUCH_TEST_LOOP_NUM	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/touch_pad.h	/^#define TOUCH_TEST_LOOP_NUM /;"	macro	line:8
+TOUCH_PAD_NO_CHANGE	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/touch_pad.h	/^#define TOUCH_PAD_NO_CHANGE /;"	macro	line:9
+TOUCH_THRESH_NO_USE	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/touch_pad.h	/^#define TOUCH_THRESH_NO_USE /;"	macro	line:10
+_GAP_CALL_H_	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.h	/^#define  _GAP_CALL_H_$/;"	macro	line:2
+scanInterval	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.h	/^uint16_t scanInterval = 0;$/;"	variable	line:6
+scanWindow	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.h	/^uint16_t scanWindow = 0;$/;"	variable	line:7
+scanDuration	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.h	/^uint32_t scanDuration = 0;$/;"	variable	line:8
+ble_discovery_raw	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.h	/^uint8_t  ble_discovery_raw[ESP_BLE_ADV_DATA_LEN_MAX + ESP_BLE_SCAN_RSP_DATA_LEN_MAX];$/;"	variable	line:10
+adv_config_flag	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.h	/^#define adv_config_flag /;"	macro	line:13
+scan_rsp_config_flag	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.h	/^#define scan_rsp_config_flag /;"	macro	line:14
+raw_adv_data_stat	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.h	/^static uint8_t raw_adv_data_stat[] = {$/;"	variable	line:17
+raw_scan_rsp_data_stat	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.h	/^static uint8_t raw_scan_rsp_data_stat[] = {$/;"	variable	line:21
+ESP_BLE_OK	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.h	/^	ESP_BLE_OK = 1,$/;"	enumerator	line:32	enum:__anon4
+ESP_BLE_FAILED	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.h	/^	ESP_BLE_FAILED$/;"	enumerator	line:33	enum:__anon4
+ble_response	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.h	/^}ble_response;$/;"	typedef	line:34	typeref:enum:__anon4
+adv_params_advertiser	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.h	/^esp_ble_adv_params_t *adv_params_advertiser;$/;"	variable	line:36
+esp_gap_cb	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.c	/^void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)$/;"	function	line:3	signature:(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
+ble_broadcasterInit	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.c	/^ble_response ble_broadcasterInit(uint8_t *raw_adv_data)$/;"	function	line:70	signature:(uint8_t *raw_adv_data)
+ble_broadcasterStart	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.c	/^ble_response ble_broadcasterStart()$/;"	function	line:103
+ble_observerInit	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.c	/^ble_response ble_observerInit()$/;"	function	line:112
+ble_observerDataCopy	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.c	/^ble_response ble_observerDataCopy(uint8_t  *ble_adv, uint8_t adv_data_len, uint8_t *adv_data)$/;"	function	line:125	signature:(uint8_t *ble_adv, uint8_t adv_data_len, uint8_t *adv_data)
+ble_observerStart	/home/jan/Workspace/git/masters_thesis/ble_adv/main/myLibrary/gap_call.c	/^ble_response ble_observerStart()$/;"	function	line:135
+_GAP_CALL_H_	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^#define  _GAP_CALL_H_$/;"	macro	line:2
+RED	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^#define RED /;"	macro	line:14
+GRN	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^#define GRN /;"	macro	line:15
+YEL	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^#define YEL /;"	macro	line:16
+BLU	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^#define BLU /;"	macro	line:17
+MAG	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^#define MAG /;"	macro	line:18
+CYN	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^#define CYN /;"	macro	line:19
+WHT	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^#define WHT /;"	macro	line:20
+RESET	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^#define RESET /;"	macro	line:21
+scanInterval	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^uint16_t scanInterval = 0;$/;"	variable	line:23
+scanWindow	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^uint16_t scanWindow = 0;$/;"	variable	line:24
+scanDuration	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^uint32_t scanDuration = 0;$/;"	variable	line:25
+ble_discovery_raw	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^uint8_t  ble_discovery_raw[ESP_BLE_ADV_DATA_LEN_MAX + ESP_BLE_SCAN_RSP_DATA_LEN_MAX];$/;"	variable	line:27
+adv_config_flag	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^#define adv_config_flag /;"	macro	line:30
+scan_rsp_config_flag	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^#define scan_rsp_config_flag /;"	macro	line:31
+raw_adv_data_stat	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^static uint8_t raw_adv_data_stat[] = {$/;"	variable	line:34
+raw_scan_rsp_data_stat	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^static uint8_t raw_scan_rsp_data_stat[] = {$/;"	variable	line:38
+ESP_BLE_OK	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^	ESP_BLE_OK = 1,$/;"	enumerator	line:49	enum:__anon5
+ESP_BLE_FAILED	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^	ESP_BLE_FAILED$/;"	enumerator	line:50	enum:__anon5
+ble_response	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^}ble_response;$/;"	typedef	line:51	typeref:enum:__anon5
+adv_params_advertiser	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.h	/^esp_ble_adv_params_t *adv_params_advertiser;$/;"	variable	line:53
+esp_gap_cb	/home/jan/Workspace/git/masters_thesis/ble_adv/main/main.c	/^void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)$/;"	function	line:33	signature:(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
+app_main	/home/jan/Workspace/git/masters_thesis/ble_adv/main/main.c	/^void app_main(){$/;"	function	line:38
+CONFIG_GATTC_ENABLE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_GATTC_ENABLE /;"	macro	line:7
+CONFIG_ESP32_PHY_MAX_TX_POWER	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_PHY_MAX_TX_POWER /;"	macro	line:8
+CONFIG_TRACEMEM_RESERVE_DRAM	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TRACEMEM_RESERVE_DRAM /;"	macro	line:9
+CONFIG_FREERTOS_MAX_TASK_NAME_LEN	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_MAX_TASK_NAME_LEN /;"	macro	line:10
+CONFIG_BLE_SMP_ENABLE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BLE_SMP_ENABLE /;"	macro	line:11
+CONFIG_FATFS_LFN_NONE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FATFS_LFN_NONE /;"	macro	line:12
+CONFIG_TCP_RECVMBOX_SIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TCP_RECVMBOX_SIZE /;"	macro	line:13
+CONFIG_FATFS_CODEPAGE_437	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FATFS_CODEPAGE_437 /;"	macro	line:14
+CONFIG_LWIP_ETHARP_TRUST_IP_MAC	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_ETHARP_TRUST_IP_MAC /;"	macro	line:15
+CONFIG_TCP_WND_DEFAULT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TCP_WND_DEFAULT /;"	macro	line:16
+CONFIG_SPIFFS_USE_MAGIC_LENGTH	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_USE_MAGIC_LENGTH /;"	macro	line:17
+CONFIG_IPC_TASK_STACK_SIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_IPC_TASK_STACK_SIZE /;"	macro	line:18
+CONFIG_FATFS_PER_FILE_CACHE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FATFS_PER_FILE_CACHE /;"	macro	line:19
+CONFIG_ESPTOOLPY_FLASHFREQ	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_FLASHFREQ /;"	macro	line:20
+CONFIG_MBEDTLS_KEY_EXCHANGE_RSA	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_RSA /;"	macro	line:21
+CONFIG_UDP_RECVMBOX_SIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_UDP_RECVMBOX_SIZE /;"	macro	line:22
+CONFIG_FREERTOS_QUEUE_REGISTRY_SIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_QUEUE_REGISTRY_SIZE /;"	macro	line:23
+CONFIG_MBEDTLS_AES_C	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_AES_C /;"	macro	line:24
+CONFIG_MBEDTLS_ECP_DP_SECP521R1_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP521R1_ENABLED /;"	macro	line:25
+CONFIG_MBEDTLS_GCM_C	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_GCM_C /;"	macro	line:26
+CONFIG_ESPTOOLPY_FLASHSIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_FLASHSIZE /;"	macro	line:27
+CONFIG_HEAP_POISONING_DISABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_HEAP_POISONING_DISABLED /;"	macro	line:28
+CONFIG_SPIFFS_CACHE_WR	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_CACHE_WR /;"	macro	line:29
+CONFIG_BROWNOUT_DET_LVL_SEL_0	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BROWNOUT_DET_LVL_SEL_0 /;"	macro	line:30
+CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER /;"	macro	line:31
+CONFIG_SPIFFS_CACHE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_CACHE /;"	macro	line:32
+CONFIG_INT_WDT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_INT_WDT /;"	macro	line:33
+CONFIG_MBEDTLS_SSL_PROTO_TLS1	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_PROTO_TLS1 /;"	macro	line:34
+CONFIG_MBEDTLS_ECDSA_C	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECDSA_C /;"	macro	line:35
+CONFIG_ESPTOOLPY_FLASHFREQ_40M	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_FLASHFREQ_40M /;"	macro	line:36
+CONFIG_LOG_BOOTLOADER_LEVEL_INFO	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LOG_BOOTLOADER_LEVEL_INFO /;"	macro	line:37
+CONFIG_ESPTOOLPY_FLASHSIZE_2MB	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_FLASHSIZE_2MB /;"	macro	line:38
+CONFIG_BTDM_CONTROLLER_PINNED_TO_CORE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BTDM_CONTROLLER_PINNED_TO_CORE /;"	macro	line:39
+CONFIG_FREERTOS_THREAD_LOCAL_STORAGE_POINTERS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_THREAD_LOCAL_STORAGE_POINTERS /;"	macro	line:40
+CONFIG_MBEDTLS_ECDH_C	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECDH_C /;"	macro	line:41
+CONFIG_MBEDTLS_KEY_EXCHANGE_ELLIPTIC_CURVE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_ELLIPTIC_CURVE /;"	macro	line:42
+CONFIG_ESP32_WIFI_STATIC_RX_BUFFER_NUM	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_STATIC_RX_BUFFER_NUM /;"	macro	line:43
+CONFIG_MBEDTLS_SSL_ALPN	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_ALPN /;"	macro	line:44
+CONFIG_MBEDTLS_PEM_WRITE_C	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_PEM_WRITE_C /;"	macro	line:45
+CONFIG_LOG_DEFAULT_LEVEL_INFO	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LOG_DEFAULT_LEVEL_INFO /;"	macro	line:46
+CONFIG_BT_RESERVE_DRAM	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BT_RESERVE_DRAM /;"	macro	line:47
+CONFIG_FATFS_FS_LOCK	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FATFS_FS_LOCK /;"	macro	line:48
+CONFIG_IP_LOST_TIMER_INTERVAL	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_IP_LOST_TIMER_INTERVAL /;"	macro	line:49
+CONFIG_SPIFFS_META_LENGTH	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_META_LENGTH /;"	macro	line:50
+CONFIG_ESP32_PANIC_PRINT_REBOOT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_PANIC_PRINT_REBOOT /;"	macro	line:51
+CONFIG_MBEDTLS_ECP_DP_BP384R1_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_BP384R1_ENABLED /;"	macro	line:52
+CONFIG_MBEDTLS_ECP_DP_SECP256K1_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP256K1_ENABLED /;"	macro	line:53
+CONFIG_CONSOLE_UART_BAUDRATE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_CONSOLE_UART_BAUDRATE /;"	macro	line:54
+CONFIG_LWIP_MAX_SOCKETS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_MAX_SOCKETS /;"	macro	line:55
+CONFIG_LWIP_NETIF_LOOPBACK	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_NETIF_LOOPBACK /;"	macro	line:56
+CONFIG_EMAC_TASK_PRIORITY	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_EMAC_TASK_PRIORITY /;"	macro	line:57
+CONFIG_TIMER_TASK_STACK_DEPTH	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TIMER_TASK_STACK_DEPTH /;"	macro	line:58
+CONFIG_TCP_MSS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TCP_MSS /;"	macro	line:59
+CONFIG_MBEDTLS_ECP_DP_CURVE25519_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_CURVE25519_ENABLED /;"	macro	line:60
+CONFIG_FATFS_CODEPAGE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FATFS_CODEPAGE /;"	macro	line:61
+CONFIG_ESP32_DEFAULT_CPU_FREQ_160	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_DEFAULT_CPU_FREQ_160 /;"	macro	line:62
+CONFIG_ULP_COPROC_RESERVE_MEM	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ULP_COPROC_RESERVE_MEM /;"	macro	line:63
+CONFIG_LWIP_MAX_UDP_PCBS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_MAX_UDP_PCBS /;"	macro	line:64
+CONFIG_ESPTOOLPY_BAUD	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_BAUD /;"	macro	line:65
+CONFIG_INT_WDT_CHECK_CPU1	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_INT_WDT_CHECK_CPU1 /;"	macro	line:66
+CONFIG_FLASHMODE_DIO	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FLASHMODE_DIO /;"	macro	line:67
+CONFIG_ESPTOOLPY_AFTER_RESET	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_AFTER_RESET /;"	macro	line:68
+CONFIG_OPTIMIZATION_ASSERTIONS_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_OPTIMIZATION_ASSERTIONS_ENABLED /;"	macro	line:69
+CONFIG_LWIP_DHCPS_MAX_STATION_NUM	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_DHCPS_MAX_STATION_NUM /;"	macro	line:70
+CONFIG_TOOLPREFIX	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TOOLPREFIX /;"	macro	line:71
+CONFIG_MBEDTLS_ECP_C	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_C /;"	macro	line:72
+CONFIG_FREERTOS_IDLE_TASK_STACKSIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_IDLE_TASK_STACKSIZE /;"	macro	line:73
+CONFIG_MBEDTLS_RC4_DISABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_RC4_DISABLED /;"	macro	line:74
+CONFIG_CONSOLE_UART_NUM	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_CONSOLE_UART_NUM /;"	macro	line:75
+CONFIG_ESP32_APPTRACE_LOCK_ENABLE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_APPTRACE_LOCK_ENABLE /;"	macro	line:76
+CONFIG_ESP32_RTC_CLOCK_SOURCE_INTERNAL_RC	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_RTC_CLOCK_SOURCE_INTERNAL_RC /;"	macro	line:77
+CONFIG_ESPTOOLPY_BAUD_115200B	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_BAUD_115200B /;"	macro	line:78
+CONFIG_TCP_OVERSIZE_MSS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TCP_OVERSIZE_MSS /;"	macro	line:79
+CONFIG_FOUR_UNIVERSAL_MAC_ADDRESS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FOUR_UNIVERSAL_MAC_ADDRESS /;"	macro	line:80
+CONFIG_CONSOLE_UART_DEFAULT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_CONSOLE_UART_DEFAULT /;"	macro	line:81
+CONFIG_MBEDTLS_SSL_MAX_CONTENT_LEN	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_MAX_CONTENT_LEN /;"	macro	line:82
+CONFIG_NUMBER_OF_UNIVERSAL_MAC_ADDRESS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_NUMBER_OF_UNIVERSAL_MAC_ADDRESS /;"	macro	line:83
+CONFIG_ESPTOOLPY_FLASHSIZE_DETECT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_FLASHSIZE_DETECT /;"	macro	line:84
+CONFIG_TIMER_TASK_STACK_SIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TIMER_TASK_STACK_SIZE /;"	macro	line:85
+CONFIG_ESP32_ENABLE_COREDUMP_TO_NONE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_ENABLE_COREDUMP_TO_NONE /;"	macro	line:86
+CONFIG_MBEDTLS_X509_CRL_PARSE_C	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_X509_CRL_PARSE_C /;"	macro	line:87
+CONFIG_LWIP_DHCPS_LEASE_UNIT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_DHCPS_LEASE_UNIT /;"	macro	line:88
+CONFIG_SPIFFS_USE_MAGIC	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_USE_MAGIC /;"	macro	line:89
+CONFIG_TCPIP_TASK_STACK_SIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TCPIP_TASK_STACK_SIZE /;"	macro	line:90
+CONFIG_BLUEDROID_PINNED_TO_CORE_0	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BLUEDROID_PINNED_TO_CORE_0 /;"	macro	line:91
+CONFIG_TASK_WDT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TASK_WDT /;"	macro	line:92
+CONFIG_MAIN_TASK_STACK_SIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MAIN_TASK_STACK_SIZE /;"	macro	line:93
+CONFIG_SPIFFS_PAGE_CHECK	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_PAGE_CHECK /;"	macro	line:94
+CONFIG_LWIP_MAX_ACTIVE_TCP	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_MAX_ACTIVE_TCP /;"	macro	line:95
+CONFIG_TASK_WDT_TIMEOUT_S	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TASK_WDT_TIMEOUT_S /;"	macro	line:96
+CONFIG_INT_WDT_TIMEOUT_MS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_INT_WDT_TIMEOUT_MS /;"	macro	line:97
+CONFIG_ESPTOOLPY_FLASHMODE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_FLASHMODE /;"	macro	line:98
+CONFIG_BTC_TASK_STACK_SIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BTC_TASK_STACK_SIZE /;"	macro	line:99
+CONFIG_BLUEDROID_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BLUEDROID_ENABLED /;"	macro	line:100
+CONFIG_NEWLIB_STDIN_LINE_ENDING_CR	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_NEWLIB_STDIN_LINE_ENDING_CR /;"	macro	line:101
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDH_RSA	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_ECDH_RSA /;"	macro	line:102
+CONFIG_ESPTOOLPY_BEFORE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_BEFORE /;"	macro	line:103
+CONFIG_LOG_DEFAULT_LEVEL	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LOG_DEFAULT_LEVEL /;"	macro	line:104
+CONFIG_FREERTOS_ASSERT_ON_UNTESTED_FUNCTION	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_ASSERT_ON_UNTESTED_FUNCTION /;"	macro	line:105
+CONFIG_TIMER_QUEUE_LENGTH	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TIMER_QUEUE_LENGTH /;"	macro	line:106
+CONFIG_MAKE_WARN_UNDEFINED_VARIABLES	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MAKE_WARN_UNDEFINED_VARIABLES /;"	macro	line:107
+CONFIG_FATFS_TIMEOUT_MS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FATFS_TIMEOUT_MS /;"	macro	line:108
+CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM /;"	macro	line:109
+CONFIG_MBEDTLS_CCM_C	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_CCM_C /;"	macro	line:110
+CONFIG_ESP32_PHY_MAX_WIFI_TX_POWER	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_PHY_MAX_WIFI_TX_POWER /;"	macro	line:111
+CONFIG_ESP32_RTC_CLK_CAL_CYCLES	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_RTC_CLK_CAL_CYCLES /;"	macro	line:112
+CONFIG_ESP32_WIFI_TX_BA_WIN	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_TX_BA_WIN /;"	macro	line:113
+CONFIG_ESP32_WIFI_NVS_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_NVS_ENABLED /;"	macro	line:114
+CONFIG_MBEDTLS_ECP_DP_SECP224R1_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP224R1_ENABLED /;"	macro	line:115
+CONFIG_LIBSODIUM_USE_MBEDTLS_SHA	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LIBSODIUM_USE_MBEDTLS_SHA /;"	macro	line:116
+CONFIG_DMA_RX_BUF_NUM	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_DMA_RX_BUF_NUM /;"	macro	line:117
+CONFIG_MBEDTLS_ECP_DP_SECP384R1_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP384R1_ENABLED /;"	macro	line:118
+CONFIG_TCP_SYNMAXRTX	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TCP_SYNMAXRTX /;"	macro	line:119
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA /;"	macro	line:120
+CONFIG_PYTHON	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_PYTHON /;"	macro	line:121
+CONFIG_MBEDTLS_ECP_NIST_OPTIM	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_NIST_OPTIM /;"	macro	line:122
+CONFIG_ESP32_TIME_SYSCALL_USE_RTC_FRC1	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_TIME_SYSCALL_USE_RTC_FRC1 /;"	macro	line:123
+CONFIG_ESPTOOLPY_COMPRESSED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_COMPRESSED /;"	macro	line:124
+CONFIG_PARTITION_TABLE_FILENAME	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_PARTITION_TABLE_FILENAME /;"	macro	line:125
+CONFIG_TCP_SND_BUF_DEFAULT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TCP_SND_BUF_DEFAULT /;"	macro	line:126
+CONFIG_LWIP_DHCP_MAX_NTP_SERVERS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_DHCP_MAX_NTP_SERVERS /;"	macro	line:127
+CONFIG_TCP_MSL	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TCP_MSL /;"	macro	line:128
+CONFIG_MBEDTLS_SSL_PROTO_TLS1_1	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_PROTO_TLS1_1 /;"	macro	line:129
+CONFIG_LWIP_SO_REUSE_RXTOALL	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_SO_REUSE_RXTOALL /;"	macro	line:130
+CONFIG_PARTITION_TABLE_SINGLE_APP	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_PARTITION_TABLE_SINGLE_APP /;"	macro	line:131
+CONFIG_ESP32_WIFI_RX_BA_WIN	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_RX_BA_WIN /;"	macro	line:132
+CONFIG_MBEDTLS_X509_CSR_PARSE_C	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_X509_CSR_PARSE_C /;"	macro	line:133
+CONFIG_SPIFFS_USE_MTIME	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_USE_MTIME /;"	macro	line:134
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_RSA	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_RSA /;"	macro	line:135
+CONFIG_LWIP_DHCP_DOES_ARP_CHECK	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_DHCP_DOES_ARP_CHECK /;"	macro	line:136
+CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE /;"	macro	line:137
+CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY /;"	macro	line:138
+CONFIG_BROWNOUT_DET_LVL	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BROWNOUT_DET_LVL /;"	macro	line:139
+CONFIG_MBEDTLS_PEM_PARSE_C	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_PEM_PARSE_C /;"	macro	line:140
+CONFIG_SPIFFS_GC_MAX_RUNS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_GC_MAX_RUNS /;"	macro	line:141
+CONFIG_ESP32_APPTRACE_DEST_NONE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_APPTRACE_DEST_NONE /;"	macro	line:142
+CONFIG_PARTITION_TABLE_CUSTOM_APP_BIN_OFFSET	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_PARTITION_TABLE_CUSTOM_APP_BIN_OFFSET /;"	macro	line:143
+CONFIG_MBEDTLS_SSL_PROTO_TLS1_2	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_PROTO_TLS1_2 /;"	macro	line:144
+CONFIG_MBEDTLS_KEY_EXCHANGE_DHE_RSA	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_DHE_RSA /;"	macro	line:145
+CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER_NUM	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER_NUM /;"	macro	line:146
+CONFIG_MBEDTLS_ECP_DP_BP256R1_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_BP256R1_ENABLED /;"	macro	line:147
+CONFIG_MBEDTLS_ECP_DP_SECP224K1_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP224K1_ENABLED /;"	macro	line:148
+CONFIG_TASK_WDT_CHECK_IDLE_TASK_CPU1	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TASK_WDT_CHECK_IDLE_TASK_CPU1 /;"	macro	line:149
+CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ /;"	macro	line:150
+CONFIG_MBEDTLS_HARDWARE_AES	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_HARDWARE_AES /;"	macro	line:151
+CONFIG_FREERTOS_HZ	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_HZ /;"	macro	line:152
+CONFIG_LOG_COLORS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LOG_COLORS /;"	macro	line:153
+CONFIG_ESP32_PHY_CALIBRATION_AND_DATA_STORAGE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_PHY_CALIBRATION_AND_DATA_STORAGE /;"	macro	line:154
+CONFIG_STACK_CHECK_NONE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_STACK_CHECK_NONE /;"	macro	line:155
+CONFIG_FREERTOS_ASSERT_FAIL_ABORT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_ASSERT_FAIL_ABORT /;"	macro	line:156
+CONFIG_BROWNOUT_DET	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BROWNOUT_DET /;"	macro	line:157
+CONFIG_ESP32_XTAL_FREQ	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_XTAL_FREQ /;"	macro	line:158
+CONFIG_MONITOR_BAUD_115200B	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MONITOR_BAUD_115200B /;"	macro	line:159
+CONFIG_LOG_BOOTLOADER_LEVEL	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LOG_BOOTLOADER_LEVEL /;"	macro	line:160
+CONFIG_MBEDTLS_TLS_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_TLS_ENABLED /;"	macro	line:161
+CONFIG_LWIP_MAX_RAW_PCBS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_MAX_RAW_PCBS /;"	macro	line:162
+CONFIG_SMP_ENABLE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SMP_ENABLE /;"	macro	line:163
+CONFIG_MBEDTLS_SSL_SESSION_TICKETS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_SESSION_TICKETS /;"	macro	line:164
+CONFIG_SPIFFS_MAX_PARTITIONS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_MAX_PARTITIONS /;"	macro	line:165
+CONFIG_BTDM_CONTROLLER_PINNED_TO_CORE_0	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BTDM_CONTROLLER_PINNED_TO_CORE_0 /;"	macro	line:166
+CONFIG_MBEDTLS_SSL_RENEGOTIATION	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_RENEGOTIATION /;"	macro	line:167
+CONFIG_ESPTOOLPY_BEFORE_RESET	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_BEFORE_RESET /;"	macro	line:168
+CONFIG_ESPTOOLPY_BAUD_OTHER_VAL	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_BAUD_OTHER_VAL /;"	macro	line:169
+CONFIG_SPIFFS_OBJ_NAME_LEN	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_OBJ_NAME_LEN /;"	macro	line:170
+CONFIG_ESP32_PTHREAD_TASK_PRIO_DEFAULT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_PTHREAD_TASK_PRIO_DEFAULT /;"	macro	line:171
+CONFIG_TCPIP_RECVMBOX_SIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TCPIP_RECVMBOX_SIZE /;"	macro	line:172
+CONFIG_TCP_MAXRTX	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TCP_MAXRTX /;"	macro	line:173
+CONFIG_ESPTOOLPY_AFTER	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_AFTER /;"	macro	line:174
+CONFIG_LWIP_SO_REUSE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_SO_REUSE /;"	macro	line:175
+CONFIG_ESP32_XTAL_FREQ_40	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_XTAL_FREQ_40 /;"	macro	line:176
+CONFIG_DMA_TX_BUF_NUM	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_DMA_TX_BUF_NUM /;"	macro	line:177
+CONFIG_LWIP_MAX_LISTENING_TCP	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_MAX_LISTENING_TCP /;"	macro	line:178
+CONFIG_FREERTOS_INTERRUPT_BACKTRACE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_INTERRUPT_BACKTRACE /;"	macro	line:179
+CONFIG_WL_SECTOR_SIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_WL_SECTOR_SIZE /;"	macro	line:180
+CONFIG_ESP32_DEBUG_OCDAWARE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_DEBUG_OCDAWARE /;"	macro	line:181
+CONFIG_TIMER_TASK_PRIORITY	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TIMER_TASK_PRIORITY /;"	macro	line:182
+CONFIG_MBEDTLS_TLS_CLIENT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_TLS_CLIENT /;"	macro	line:183
+CONFIG_BTDM_CONTROLLER_HCI_MODE_VHCI	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BTDM_CONTROLLER_HCI_MODE_VHCI /;"	macro	line:184
+CONFIG_BT_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BT_ENABLED /;"	macro	line:185
+CONFIG_MBEDTLS_ECP_DP_SECP256R1_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP256R1_ENABLED /;"	macro	line:186
+CONFIG_MONITOR_BAUD	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MONITOR_BAUD /;"	macro	line:187
+CONFIG_FREERTOS_CORETIMER_0	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_CORETIMER_0 /;"	macro	line:188
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME /;"	macro	line:189
+CONFIG_MBEDTLS_HAVE_TIME	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_HAVE_TIME /;"	macro	line:190
+CONFIG_FREERTOS_CHECK_STACKOVERFLOW_CANARY	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_CHECK_STACKOVERFLOW_CANARY /;"	macro	line:191
+CONFIG_TCP_QUEUE_OOSEQ	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TCP_QUEUE_OOSEQ /;"	macro	line:192
+CONFIG_GATTS_ENABLE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_GATTS_ENABLE /;"	macro	line:193
+CONFIG_MBEDTLS_TLS_SERVER	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_TLS_SERVER /;"	macro	line:194
+CONFIG_MBEDTLS_TLS_SERVER_AND_CLIENT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_TLS_SERVER_AND_CLIENT /;"	macro	line:195
+CONFIG_FREERTOS_ISR_STACKSIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_ISR_STACKSIZE /;"	macro	line:196
+CONFIG_OPENSSL_ASSERT_DO_NOTHING	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_OPENSSL_ASSERT_DO_NOTHING /;"	macro	line:197
+CONFIG_WL_SECTOR_SIZE_4096	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_WL_SECTOR_SIZE_4096 /;"	macro	line:198
+CONFIG_OPTIMIZATION_LEVEL_DEBUG	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_OPTIMIZATION_LEVEL_DEBUG /;"	macro	line:199
+CONFIG_ESP32_WIFI_AMPDU_TX_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_AMPDU_TX_ENABLED /;"	macro	line:200
+CONFIG_BOOTLOADER_VDDSDIO_BOOST	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BOOTLOADER_VDDSDIO_BOOST /;"	macro	line:201
+CONFIG_MBEDTLS_ECP_DP_SECP192R1_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP192R1_ENABLED /;"	macro	line:202
+CONFIG_MBEDTLS_ECP_DP_BP512R1_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_BP512R1_ENABLED /;"	macro	line:203
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA /;"	macro	line:204
+CONFIG_SYSTEM_EVENT_QUEUE_SIZE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SYSTEM_EVENT_QUEUE_SIZE /;"	macro	line:205
+CONFIG_BT_ACL_CONNECTIONS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BT_ACL_CONNECTIONS /;"	macro	line:206
+CONFIG_ESP32_WIFI_TX_BUFFER_TYPE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_TX_BUFFER_TYPE /;"	macro	line:207
+CONFIG_ESP32_WIFI_AMPDU_RX_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_AMPDU_RX_ENABLED /;"	macro	line:208
+CONFIG_LWIP_LOOPBACK_MAX_PBUFS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_LWIP_LOOPBACK_MAX_PBUFS /;"	macro	line:209
+CONFIG_APP_OFFSET	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_APP_OFFSET /;"	macro	line:210
+CONFIG_MEMMAP_SMP	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MEMMAP_SMP /;"	macro	line:211
+CONFIG_SPI_FLASH_ROM_DRIVER_PATCH	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SPI_FLASH_ROM_DRIVER_PATCH /;"	macro	line:212
+CONFIG_MBEDTLS_ECP_DP_SECP192K1_ENABLED	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP192K1_ENABLED /;"	macro	line:213
+CONFIG_TASK_WDT_CHECK_IDLE_TASK_CPU0	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_TASK_WDT_CHECK_IDLE_TASK_CPU0 /;"	macro	line:214
+CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT /;"	macro	line:215
+CONFIG_MONITOR_BAUD_OTHER_VAL	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_MONITOR_BAUD_OTHER_VAL /;"	macro	line:216
+CONFIG_NEWLIB_STDOUT_LINE_ENDING_CRLF	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_NEWLIB_STDOUT_LINE_ENDING_CRLF /;"	macro	line:217
+CONFIG_ESPTOOLPY_PORT	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_PORT /;"	macro	line:218
+CONFIG_SPI_FLASH_WRITING_DANGEROUS_REGIONS_ABORTS	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_SPI_FLASH_WRITING_DANGEROUS_REGIONS_ABORTS /;"	macro	line:219
+CONFIG_BLUEDROID_PINNED_TO_CORE	/home/jan/Workspace/git/masters_thesis/ble_adv/build/include/sdkconfig.h	/^#define CONFIG_BLUEDROID_PINNED_TO_CORE /;"	macro	line:220
+master-s-thesis	/home/jan/Workspace/git/masters_thesis/README.md	/^# master-s-thesis$/;"	function	line:1
+BLE Advertiser	/home/jan/Workspace/git/masters_thesis/advertiser/README.md	/^# BLE Advertiser$/;"	function	line:1
+PROJECT_NAME	/home/jan/Workspace/git/masters_thesis/advertiser/Makefile	/^PROJECT_NAME := advertiser$/;"	macro	line:6
+tp_example_read_task	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/touch_pad.c	/^void tp_example_read_task(void *pvParameter)$/;"	function	line:5	signature:(void *pvParameter)
+tp_example_touch_pad_init	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/touch_pad.c	/^void tp_example_touch_pad_init()$/;"	function	line:64
+_PLATFORM_H_	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^#define _PLATFORM_H_$/;"	macro	line:2
+MEASURE_DONE	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    MEASURE_DONE,$/;"	enumerator	line:5	enum:__anon6
+MEASURE_READY	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    MEASURE_READY,$/;"	enumerator	line:6	enum:__anon6
+MEASURE_BLOCK	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    MEASURE_BLOCK,$/;"	enumerator	line:7	enum:__anon6
+MEASURE_NONE	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    MEASURE_NONE$/;"	enumerator	line:8	enum:__anon6
+measure_control_t	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^}measure_control_t;$/;"	typedef	line:9	typeref:enum:__anon6
+MEASURE_TYPE_XYZ	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    MEASURE_TYPE_XYZ,$/;"	enumerator	line:12	enum:__anon7
+MEASURE_TYPE_ANGLE	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    MEASURE_TYPE_ANGLE,$/;"	enumerator	line:13	enum:__anon7
+MEASURE_TYPE_SPEED	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    MEASURE_TYPE_SPEED$/;"	enumerator	line:14	enum:__anon7
+measure_type_t	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^}measure_type_t;$/;"	typedef	line:15	typeref:enum:__anon7
+measurement	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^struct measurement{$/;"	struct	line:19
+Value_1	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    measure_value_t Value_1;$/;"	member	line:20	struct:measurement
+Value_2	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    measure_value_t Value_2;$/;"	member	line:21	struct:measurement
+Value_3	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    measure_value_t Value_3;$/;"	member	line:22	struct:measurement
+Value_supp	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    measure_value_t Value_supp;$/;"	member	line:24	struct:measurement
+MeasureControl	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    measure_control_t MeasureControl;$/;"	member	line:26	struct:measurement
+measurementGlobalData	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^struct measurement *measurementGlobalData;$/;"	typedef	line:29	typeref:struct:measurement
+STORAGE_LOCAL	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    STORAGE_LOCAL,$/;"	enumerator	line:32	enum:__anon8
+STORAGE_GLOBAL	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    STORAGE_GLOBAL,$/;"	enumerator	line:33	enum:__anon8
+STORAGE_DONE	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    STORAGE_DONE,$/;"	enumerator	line:34	enum:__anon8
+STORAGE_NONE	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    STORAGE_NONE,$/;"	enumerator	line:35	enum:__anon8
+STORAGE_BREAK	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^    STORAGE_BREAK$/;"	enumerator	line:36	enum:__anon8
+storage_type_t	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.h	/^} storage_type_t;$/;"	typedef	line:37	typeref:enum:__anon8
+mes_saveValue	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.c	/^void mes_saveValue(storage_type_t storeType)$/;"	function	line:3	signature:(storage_type_t storeType)
+mes_doMeasure	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.c	/^measure_control_t mes_doMeasure(measure_type_t mType)$/;"	function	line:12	signature:(measure_type_t mType)
+mes_accelerometerRead	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.c	/^measure_control_fail_t mes_accelerometerRead()$/;"	function	line:22
+mes_angleRead	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.c	/^measure_control_fail_t mes_angleRead()$/;"	function	line:27
+mes_speedRead	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/platform.c	/^measure_control_fail_t mes_speedRead()$/;"	function	line:32
+_TOUCH_PAD_H_	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/touch_pad.h	/^#define _TOUCH_PAD_H_$/;"	macro	line:2
+TOUCH_TEST_LOOP_NUM	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/touch_pad.h	/^#define TOUCH_TEST_LOOP_NUM /;"	macro	line:8
+TOUCH_PAD_NO_CHANGE	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/touch_pad.h	/^#define TOUCH_PAD_NO_CHANGE /;"	macro	line:9
+TOUCH_THRESH_NO_USE	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/touch_pad.h	/^#define TOUCH_THRESH_NO_USE /;"	macro	line:10
+_GAP_CALL_H_	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^#define  _GAP_CALL_H_$/;"	macro	line:2
+scanInterval	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^uint16_t scanInterval = 0;$/;"	variable	line:4
+scanWindow	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^uint16_t scanWindow = 0;$/;"	variable	line:5
+scanDuration	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^uint32_t scanDuration = 0;$/;"	variable	line:6
+ble_discovery_raw	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^uint8_t  ble_discovery_raw[ESP_BLE_ADV_DATA_LEN_MAX + ESP_BLE_SCAN_RSP_DATA_LEN_MAX];$/;"	variable	line:8
+adv_config_done	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^static uint8_t adv_config_done = 0;$/;"	variable	line:10
+adv_config_flag	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^#define adv_config_flag /;"	macro	line:11
+scan_rsp_config_flag	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^#define scan_rsp_config_flag /;"	macro	line:12
+raw_adv_data_stat	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^static uint8_t raw_adv_data_stat[] = {$/;"	variable	line:15
+raw_scan_rsp_data_stat	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^static uint8_t raw_scan_rsp_data_stat[] = {$/;"	variable	line:19
+ESP_BLE_OK	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^	ESP_BLE_OK = 1,$/;"	enumerator	line:30	enum:__anon9
+ESP_BLE_FAILED	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^	ESP_BLE_FAILED$/;"	enumerator	line:31	enum:__anon9
+ble_response	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^}ble_response;$/;"	typedef	line:32	typeref:enum:__anon9
+adv_params_advertiser	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.h	/^esp_ble_adv_params_t *adv_params_advertiser;$/;"	variable	line:34
+esp_gap_cb	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.c	/^void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)$/;"	function	line:3	signature:(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
+ble_broadcasterInit	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.c	/^ble_response ble_broadcasterInit(uint8_t *raw_adv_data)$/;"	function	line:70	signature:(uint8_t *raw_adv_data)
+ble_broadcasterStart	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.c	/^ble_response ble_broadcasterStart()$/;"	function	line:103
+ble_observerInit	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.c	/^ble_response ble_observerInit()$/;"	function	line:112
+ble_observerDataCopy	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.c	/^ble_response ble_observerDataCopy(uint8_t  *ble_adv, uint8_t adv_data_len, uint8_t *adv_data)$/;"	function	line:125	signature:(uint8_t *ble_adv, uint8_t adv_data_len, uint8_t *adv_data)
+ble_observerStart	/home/jan/Workspace/git/masters_thesis/advertiser/main/myLibrary/gap_call.c	/^ble_response ble_observerStart()$/;"	function	line:135
+main	/home/jan/Workspace/git/masters_thesis/advertiser/main/main.c	/^int main(){$/;"	function	line:32
+CONFIG_GATTC_ENABLE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_GATTC_ENABLE /;"	macro	line:7
+CONFIG_ESP32_PHY_MAX_TX_POWER	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_PHY_MAX_TX_POWER /;"	macro	line:8
+CONFIG_TRACEMEM_RESERVE_DRAM	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TRACEMEM_RESERVE_DRAM /;"	macro	line:9
+CONFIG_FREERTOS_MAX_TASK_NAME_LEN	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_MAX_TASK_NAME_LEN /;"	macro	line:10
+CONFIG_BLE_SMP_ENABLE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BLE_SMP_ENABLE /;"	macro	line:11
+CONFIG_FATFS_LFN_NONE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FATFS_LFN_NONE /;"	macro	line:12
+CONFIG_TCP_RECVMBOX_SIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TCP_RECVMBOX_SIZE /;"	macro	line:13
+CONFIG_FATFS_CODEPAGE_437	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FATFS_CODEPAGE_437 /;"	macro	line:14
+CONFIG_LWIP_ETHARP_TRUST_IP_MAC	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_ETHARP_TRUST_IP_MAC /;"	macro	line:15
+CONFIG_TCP_WND_DEFAULT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TCP_WND_DEFAULT /;"	macro	line:16
+CONFIG_SPIFFS_USE_MAGIC_LENGTH	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_USE_MAGIC_LENGTH /;"	macro	line:17
+CONFIG_IPC_TASK_STACK_SIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_IPC_TASK_STACK_SIZE /;"	macro	line:18
+CONFIG_FATFS_PER_FILE_CACHE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FATFS_PER_FILE_CACHE /;"	macro	line:19
+CONFIG_ESPTOOLPY_FLASHFREQ	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_FLASHFREQ /;"	macro	line:20
+CONFIG_MBEDTLS_KEY_EXCHANGE_RSA	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_RSA /;"	macro	line:21
+CONFIG_UDP_RECVMBOX_SIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_UDP_RECVMBOX_SIZE /;"	macro	line:22
+CONFIG_FREERTOS_QUEUE_REGISTRY_SIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_QUEUE_REGISTRY_SIZE /;"	macro	line:23
+CONFIG_MBEDTLS_AES_C	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_AES_C /;"	macro	line:24
+CONFIG_MBEDTLS_ECP_DP_SECP521R1_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP521R1_ENABLED /;"	macro	line:25
+CONFIG_MBEDTLS_GCM_C	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_GCM_C /;"	macro	line:26
+CONFIG_ESPTOOLPY_FLASHSIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_FLASHSIZE /;"	macro	line:27
+CONFIG_HEAP_POISONING_DISABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_HEAP_POISONING_DISABLED /;"	macro	line:28
+CONFIG_SPIFFS_CACHE_WR	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_CACHE_WR /;"	macro	line:29
+CONFIG_BROWNOUT_DET_LVL_SEL_0	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BROWNOUT_DET_LVL_SEL_0 /;"	macro	line:30
+CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER /;"	macro	line:31
+CONFIG_SPIFFS_CACHE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_CACHE /;"	macro	line:32
+CONFIG_INT_WDT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_INT_WDT /;"	macro	line:33
+CONFIG_MBEDTLS_SSL_PROTO_TLS1	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_PROTO_TLS1 /;"	macro	line:34
+CONFIG_MBEDTLS_ECDSA_C	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECDSA_C /;"	macro	line:35
+CONFIG_ESPTOOLPY_FLASHFREQ_40M	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_FLASHFREQ_40M /;"	macro	line:36
+CONFIG_LOG_BOOTLOADER_LEVEL_INFO	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LOG_BOOTLOADER_LEVEL_INFO /;"	macro	line:37
+CONFIG_ESPTOOLPY_FLASHSIZE_2MB	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_FLASHSIZE_2MB /;"	macro	line:38
+CONFIG_BTDM_CONTROLLER_PINNED_TO_CORE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BTDM_CONTROLLER_PINNED_TO_CORE /;"	macro	line:39
+CONFIG_FREERTOS_THREAD_LOCAL_STORAGE_POINTERS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_THREAD_LOCAL_STORAGE_POINTERS /;"	macro	line:40
+CONFIG_MBEDTLS_ECDH_C	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECDH_C /;"	macro	line:41
+CONFIG_MBEDTLS_KEY_EXCHANGE_ELLIPTIC_CURVE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_ELLIPTIC_CURVE /;"	macro	line:42
+CONFIG_ESP32_WIFI_STATIC_RX_BUFFER_NUM	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_STATIC_RX_BUFFER_NUM /;"	macro	line:43
+CONFIG_MBEDTLS_SSL_ALPN	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_ALPN /;"	macro	line:44
+CONFIG_MBEDTLS_PEM_WRITE_C	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_PEM_WRITE_C /;"	macro	line:45
+CONFIG_LOG_DEFAULT_LEVEL_INFO	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LOG_DEFAULT_LEVEL_INFO /;"	macro	line:46
+CONFIG_BT_RESERVE_DRAM	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BT_RESERVE_DRAM /;"	macro	line:47
+CONFIG_FATFS_FS_LOCK	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FATFS_FS_LOCK /;"	macro	line:48
+CONFIG_IP_LOST_TIMER_INTERVAL	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_IP_LOST_TIMER_INTERVAL /;"	macro	line:49
+CONFIG_SPIFFS_META_LENGTH	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_META_LENGTH /;"	macro	line:50
+CONFIG_ESP32_PANIC_PRINT_REBOOT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_PANIC_PRINT_REBOOT /;"	macro	line:51
+CONFIG_MBEDTLS_ECP_DP_BP384R1_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_BP384R1_ENABLED /;"	macro	line:52
+CONFIG_MBEDTLS_ECP_DP_SECP256K1_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP256K1_ENABLED /;"	macro	line:53
+CONFIG_CONSOLE_UART_BAUDRATE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_CONSOLE_UART_BAUDRATE /;"	macro	line:54
+CONFIG_LWIP_MAX_SOCKETS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_MAX_SOCKETS /;"	macro	line:55
+CONFIG_LWIP_NETIF_LOOPBACK	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_NETIF_LOOPBACK /;"	macro	line:56
+CONFIG_EMAC_TASK_PRIORITY	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_EMAC_TASK_PRIORITY /;"	macro	line:57
+CONFIG_TIMER_TASK_STACK_DEPTH	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TIMER_TASK_STACK_DEPTH /;"	macro	line:58
+CONFIG_TCP_MSS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TCP_MSS /;"	macro	line:59
+CONFIG_MBEDTLS_ECP_DP_CURVE25519_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_CURVE25519_ENABLED /;"	macro	line:60
+CONFIG_FATFS_CODEPAGE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FATFS_CODEPAGE /;"	macro	line:61
+CONFIG_ESP32_DEFAULT_CPU_FREQ_160	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_DEFAULT_CPU_FREQ_160 /;"	macro	line:62
+CONFIG_ULP_COPROC_RESERVE_MEM	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ULP_COPROC_RESERVE_MEM /;"	macro	line:63
+CONFIG_LWIP_MAX_UDP_PCBS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_MAX_UDP_PCBS /;"	macro	line:64
+CONFIG_ESPTOOLPY_BAUD	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_BAUD /;"	macro	line:65
+CONFIG_INT_WDT_CHECK_CPU1	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_INT_WDT_CHECK_CPU1 /;"	macro	line:66
+CONFIG_FLASHMODE_DIO	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FLASHMODE_DIO /;"	macro	line:67
+CONFIG_ESPTOOLPY_AFTER_RESET	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_AFTER_RESET /;"	macro	line:68
+CONFIG_OPTIMIZATION_ASSERTIONS_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_OPTIMIZATION_ASSERTIONS_ENABLED /;"	macro	line:69
+CONFIG_LWIP_DHCPS_MAX_STATION_NUM	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_DHCPS_MAX_STATION_NUM /;"	macro	line:70
+CONFIG_TOOLPREFIX	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TOOLPREFIX /;"	macro	line:71
+CONFIG_MBEDTLS_ECP_C	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_C /;"	macro	line:72
+CONFIG_FREERTOS_IDLE_TASK_STACKSIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_IDLE_TASK_STACKSIZE /;"	macro	line:73
+CONFIG_MBEDTLS_RC4_DISABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_RC4_DISABLED /;"	macro	line:74
+CONFIG_CONSOLE_UART_NUM	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_CONSOLE_UART_NUM /;"	macro	line:75
+CONFIG_ESP32_APPTRACE_LOCK_ENABLE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_APPTRACE_LOCK_ENABLE /;"	macro	line:76
+CONFIG_ESP32_RTC_CLOCK_SOURCE_INTERNAL_RC	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_RTC_CLOCK_SOURCE_INTERNAL_RC /;"	macro	line:77
+CONFIG_ESPTOOLPY_BAUD_115200B	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_BAUD_115200B /;"	macro	line:78
+CONFIG_TCP_OVERSIZE_MSS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TCP_OVERSIZE_MSS /;"	macro	line:79
+CONFIG_FOUR_UNIVERSAL_MAC_ADDRESS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FOUR_UNIVERSAL_MAC_ADDRESS /;"	macro	line:80
+CONFIG_CONSOLE_UART_DEFAULT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_CONSOLE_UART_DEFAULT /;"	macro	line:81
+CONFIG_MBEDTLS_SSL_MAX_CONTENT_LEN	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_MAX_CONTENT_LEN /;"	macro	line:82
+CONFIG_NUMBER_OF_UNIVERSAL_MAC_ADDRESS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_NUMBER_OF_UNIVERSAL_MAC_ADDRESS /;"	macro	line:83
+CONFIG_ESPTOOLPY_FLASHSIZE_DETECT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_FLASHSIZE_DETECT /;"	macro	line:84
+CONFIG_TIMER_TASK_STACK_SIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TIMER_TASK_STACK_SIZE /;"	macro	line:85
+CONFIG_ESP32_ENABLE_COREDUMP_TO_NONE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_ENABLE_COREDUMP_TO_NONE /;"	macro	line:86
+CONFIG_MBEDTLS_X509_CRL_PARSE_C	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_X509_CRL_PARSE_C /;"	macro	line:87
+CONFIG_LWIP_DHCPS_LEASE_UNIT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_DHCPS_LEASE_UNIT /;"	macro	line:88
+CONFIG_SPIFFS_USE_MAGIC	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_USE_MAGIC /;"	macro	line:89
+CONFIG_TCPIP_TASK_STACK_SIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TCPIP_TASK_STACK_SIZE /;"	macro	line:90
+CONFIG_BLUEDROID_PINNED_TO_CORE_0	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BLUEDROID_PINNED_TO_CORE_0 /;"	macro	line:91
+CONFIG_TASK_WDT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TASK_WDT /;"	macro	line:92
+CONFIG_MAIN_TASK_STACK_SIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MAIN_TASK_STACK_SIZE /;"	macro	line:93
+CONFIG_SPIFFS_PAGE_CHECK	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_PAGE_CHECK /;"	macro	line:94
+CONFIG_LWIP_MAX_ACTIVE_TCP	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_MAX_ACTIVE_TCP /;"	macro	line:95
+CONFIG_TASK_WDT_TIMEOUT_S	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TASK_WDT_TIMEOUT_S /;"	macro	line:96
+CONFIG_INT_WDT_TIMEOUT_MS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_INT_WDT_TIMEOUT_MS /;"	macro	line:97
+CONFIG_ESPTOOLPY_FLASHMODE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_FLASHMODE /;"	macro	line:98
+CONFIG_BTC_TASK_STACK_SIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BTC_TASK_STACK_SIZE /;"	macro	line:99
+CONFIG_BLUEDROID_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BLUEDROID_ENABLED /;"	macro	line:100
+CONFIG_NEWLIB_STDIN_LINE_ENDING_CR	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_NEWLIB_STDIN_LINE_ENDING_CR /;"	macro	line:101
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDH_RSA	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_ECDH_RSA /;"	macro	line:102
+CONFIG_ESPTOOLPY_BEFORE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_BEFORE /;"	macro	line:103
+CONFIG_LOG_DEFAULT_LEVEL	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LOG_DEFAULT_LEVEL /;"	macro	line:104
+CONFIG_FREERTOS_ASSERT_ON_UNTESTED_FUNCTION	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_ASSERT_ON_UNTESTED_FUNCTION /;"	macro	line:105
+CONFIG_TIMER_QUEUE_LENGTH	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TIMER_QUEUE_LENGTH /;"	macro	line:106
+CONFIG_MAKE_WARN_UNDEFINED_VARIABLES	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MAKE_WARN_UNDEFINED_VARIABLES /;"	macro	line:107
+CONFIG_FATFS_TIMEOUT_MS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FATFS_TIMEOUT_MS /;"	macro	line:108
+CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM /;"	macro	line:109
+CONFIG_MBEDTLS_CCM_C	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_CCM_C /;"	macro	line:110
+CONFIG_ESP32_PHY_MAX_WIFI_TX_POWER	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_PHY_MAX_WIFI_TX_POWER /;"	macro	line:111
+CONFIG_ESP32_RTC_CLK_CAL_CYCLES	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_RTC_CLK_CAL_CYCLES /;"	macro	line:112
+CONFIG_ESP32_WIFI_TX_BA_WIN	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_TX_BA_WIN /;"	macro	line:113
+CONFIG_ESP32_WIFI_NVS_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_NVS_ENABLED /;"	macro	line:114
+CONFIG_MBEDTLS_ECP_DP_SECP224R1_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP224R1_ENABLED /;"	macro	line:115
+CONFIG_LIBSODIUM_USE_MBEDTLS_SHA	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LIBSODIUM_USE_MBEDTLS_SHA /;"	macro	line:116
+CONFIG_DMA_RX_BUF_NUM	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_DMA_RX_BUF_NUM /;"	macro	line:117
+CONFIG_MBEDTLS_ECP_DP_SECP384R1_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP384R1_ENABLED /;"	macro	line:118
+CONFIG_TCP_SYNMAXRTX	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TCP_SYNMAXRTX /;"	macro	line:119
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA /;"	macro	line:120
+CONFIG_PYTHON	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_PYTHON /;"	macro	line:121
+CONFIG_MBEDTLS_ECP_NIST_OPTIM	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_NIST_OPTIM /;"	macro	line:122
+CONFIG_ESP32_TIME_SYSCALL_USE_RTC_FRC1	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_TIME_SYSCALL_USE_RTC_FRC1 /;"	macro	line:123
+CONFIG_ESPTOOLPY_COMPRESSED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_COMPRESSED /;"	macro	line:124
+CONFIG_PARTITION_TABLE_FILENAME	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_PARTITION_TABLE_FILENAME /;"	macro	line:125
+CONFIG_TCP_SND_BUF_DEFAULT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TCP_SND_BUF_DEFAULT /;"	macro	line:126
+CONFIG_LWIP_DHCP_MAX_NTP_SERVERS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_DHCP_MAX_NTP_SERVERS /;"	macro	line:127
+CONFIG_TCP_MSL	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TCP_MSL /;"	macro	line:128
+CONFIG_MBEDTLS_SSL_PROTO_TLS1_1	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_PROTO_TLS1_1 /;"	macro	line:129
+CONFIG_LWIP_SO_REUSE_RXTOALL	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_SO_REUSE_RXTOALL /;"	macro	line:130
+CONFIG_PARTITION_TABLE_SINGLE_APP	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_PARTITION_TABLE_SINGLE_APP /;"	macro	line:131
+CONFIG_ESP32_WIFI_RX_BA_WIN	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_RX_BA_WIN /;"	macro	line:132
+CONFIG_MBEDTLS_X509_CSR_PARSE_C	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_X509_CSR_PARSE_C /;"	macro	line:133
+CONFIG_SPIFFS_USE_MTIME	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_USE_MTIME /;"	macro	line:134
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_RSA	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_RSA /;"	macro	line:135
+CONFIG_LWIP_DHCP_DOES_ARP_CHECK	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_DHCP_DOES_ARP_CHECK /;"	macro	line:136
+CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SYSTEM_EVENT_TASK_STACK_SIZE /;"	macro	line:137
+CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY /;"	macro	line:138
+CONFIG_BROWNOUT_DET_LVL	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BROWNOUT_DET_LVL /;"	macro	line:139
+CONFIG_MBEDTLS_PEM_PARSE_C	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_PEM_PARSE_C /;"	macro	line:140
+CONFIG_SPIFFS_GC_MAX_RUNS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_GC_MAX_RUNS /;"	macro	line:141
+CONFIG_ESP32_APPTRACE_DEST_NONE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_APPTRACE_DEST_NONE /;"	macro	line:142
+CONFIG_PARTITION_TABLE_CUSTOM_APP_BIN_OFFSET	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_PARTITION_TABLE_CUSTOM_APP_BIN_OFFSET /;"	macro	line:143
+CONFIG_MBEDTLS_SSL_PROTO_TLS1_2	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_PROTO_TLS1_2 /;"	macro	line:144
+CONFIG_MBEDTLS_KEY_EXCHANGE_DHE_RSA	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_DHE_RSA /;"	macro	line:145
+CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER_NUM	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER_NUM /;"	macro	line:146
+CONFIG_MBEDTLS_ECP_DP_BP256R1_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_BP256R1_ENABLED /;"	macro	line:147
+CONFIG_MBEDTLS_ECP_DP_SECP224K1_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP224K1_ENABLED /;"	macro	line:148
+CONFIG_TASK_WDT_CHECK_IDLE_TASK_CPU1	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TASK_WDT_CHECK_IDLE_TASK_CPU1 /;"	macro	line:149
+CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ /;"	macro	line:150
+CONFIG_MBEDTLS_HARDWARE_AES	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_HARDWARE_AES /;"	macro	line:151
+CONFIG_FREERTOS_HZ	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_HZ /;"	macro	line:152
+CONFIG_LOG_COLORS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LOG_COLORS /;"	macro	line:153
+CONFIG_ESP32_PHY_CALIBRATION_AND_DATA_STORAGE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_PHY_CALIBRATION_AND_DATA_STORAGE /;"	macro	line:154
+CONFIG_STACK_CHECK_NONE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_STACK_CHECK_NONE /;"	macro	line:155
+CONFIG_FREERTOS_ASSERT_FAIL_ABORT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_ASSERT_FAIL_ABORT /;"	macro	line:156
+CONFIG_BROWNOUT_DET	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BROWNOUT_DET /;"	macro	line:157
+CONFIG_ESP32_XTAL_FREQ	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_XTAL_FREQ /;"	macro	line:158
+CONFIG_MONITOR_BAUD_115200B	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MONITOR_BAUD_115200B /;"	macro	line:159
+CONFIG_LOG_BOOTLOADER_LEVEL	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LOG_BOOTLOADER_LEVEL /;"	macro	line:160
+CONFIG_MBEDTLS_TLS_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_TLS_ENABLED /;"	macro	line:161
+CONFIG_LWIP_MAX_RAW_PCBS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_MAX_RAW_PCBS /;"	macro	line:162
+CONFIG_SMP_ENABLE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SMP_ENABLE /;"	macro	line:163
+CONFIG_MBEDTLS_SSL_SESSION_TICKETS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_SESSION_TICKETS /;"	macro	line:164
+CONFIG_SPIFFS_MAX_PARTITIONS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_MAX_PARTITIONS /;"	macro	line:165
+CONFIG_BTDM_CONTROLLER_PINNED_TO_CORE_0	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BTDM_CONTROLLER_PINNED_TO_CORE_0 /;"	macro	line:166
+CONFIG_MBEDTLS_SSL_RENEGOTIATION	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_SSL_RENEGOTIATION /;"	macro	line:167
+CONFIG_ESPTOOLPY_BEFORE_RESET	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_BEFORE_RESET /;"	macro	line:168
+CONFIG_ESPTOOLPY_BAUD_OTHER_VAL	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_BAUD_OTHER_VAL /;"	macro	line:169
+CONFIG_SPIFFS_OBJ_NAME_LEN	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SPIFFS_OBJ_NAME_LEN /;"	macro	line:170
+CONFIG_ESP32_PTHREAD_TASK_PRIO_DEFAULT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_PTHREAD_TASK_PRIO_DEFAULT /;"	macro	line:171
+CONFIG_TCPIP_RECVMBOX_SIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TCPIP_RECVMBOX_SIZE /;"	macro	line:172
+CONFIG_TCP_MAXRTX	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TCP_MAXRTX /;"	macro	line:173
+CONFIG_ESPTOOLPY_AFTER	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_AFTER /;"	macro	line:174
+CONFIG_LWIP_SO_REUSE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_SO_REUSE /;"	macro	line:175
+CONFIG_ESP32_XTAL_FREQ_40	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_XTAL_FREQ_40 /;"	macro	line:176
+CONFIG_DMA_TX_BUF_NUM	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_DMA_TX_BUF_NUM /;"	macro	line:177
+CONFIG_LWIP_MAX_LISTENING_TCP	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_MAX_LISTENING_TCP /;"	macro	line:178
+CONFIG_FREERTOS_INTERRUPT_BACKTRACE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_INTERRUPT_BACKTRACE /;"	macro	line:179
+CONFIG_WL_SECTOR_SIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_WL_SECTOR_SIZE /;"	macro	line:180
+CONFIG_ESP32_DEBUG_OCDAWARE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_DEBUG_OCDAWARE /;"	macro	line:181
+CONFIG_TIMER_TASK_PRIORITY	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TIMER_TASK_PRIORITY /;"	macro	line:182
+CONFIG_MBEDTLS_TLS_CLIENT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_TLS_CLIENT /;"	macro	line:183
+CONFIG_BTDM_CONTROLLER_HCI_MODE_VHCI	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BTDM_CONTROLLER_HCI_MODE_VHCI /;"	macro	line:184
+CONFIG_BT_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BT_ENABLED /;"	macro	line:185
+CONFIG_MBEDTLS_ECP_DP_SECP256R1_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP256R1_ENABLED /;"	macro	line:186
+CONFIG_MONITOR_BAUD	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MONITOR_BAUD /;"	macro	line:187
+CONFIG_FREERTOS_CORETIMER_0	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_CORETIMER_0 /;"	macro	line:188
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_PARTITION_TABLE_CUSTOM_FILENAME /;"	macro	line:189
+CONFIG_MBEDTLS_HAVE_TIME	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_HAVE_TIME /;"	macro	line:190
+CONFIG_FREERTOS_CHECK_STACKOVERFLOW_CANARY	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_CHECK_STACKOVERFLOW_CANARY /;"	macro	line:191
+CONFIG_TCP_QUEUE_OOSEQ	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TCP_QUEUE_OOSEQ /;"	macro	line:192
+CONFIG_GATTS_ENABLE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_GATTS_ENABLE /;"	macro	line:193
+CONFIG_MBEDTLS_TLS_SERVER	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_TLS_SERVER /;"	macro	line:194
+CONFIG_MBEDTLS_TLS_SERVER_AND_CLIENT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_TLS_SERVER_AND_CLIENT /;"	macro	line:195
+CONFIG_FREERTOS_ISR_STACKSIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_FREERTOS_ISR_STACKSIZE /;"	macro	line:196
+CONFIG_OPENSSL_ASSERT_DO_NOTHING	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_OPENSSL_ASSERT_DO_NOTHING /;"	macro	line:197
+CONFIG_WL_SECTOR_SIZE_4096	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_WL_SECTOR_SIZE_4096 /;"	macro	line:198
+CONFIG_OPTIMIZATION_LEVEL_DEBUG	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_OPTIMIZATION_LEVEL_DEBUG /;"	macro	line:199
+CONFIG_ESP32_WIFI_AMPDU_TX_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_AMPDU_TX_ENABLED /;"	macro	line:200
+CONFIG_BOOTLOADER_VDDSDIO_BOOST	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BOOTLOADER_VDDSDIO_BOOST /;"	macro	line:201
+CONFIG_MBEDTLS_ECP_DP_SECP192R1_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP192R1_ENABLED /;"	macro	line:202
+CONFIG_MBEDTLS_ECP_DP_BP512R1_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_BP512R1_ENABLED /;"	macro	line:203
+CONFIG_MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA /;"	macro	line:204
+CONFIG_SYSTEM_EVENT_QUEUE_SIZE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SYSTEM_EVENT_QUEUE_SIZE /;"	macro	line:205
+CONFIG_BT_ACL_CONNECTIONS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BT_ACL_CONNECTIONS /;"	macro	line:206
+CONFIG_ESP32_WIFI_TX_BUFFER_TYPE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_TX_BUFFER_TYPE /;"	macro	line:207
+CONFIG_ESP32_WIFI_AMPDU_RX_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_WIFI_AMPDU_RX_ENABLED /;"	macro	line:208
+CONFIG_LWIP_LOOPBACK_MAX_PBUFS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_LWIP_LOOPBACK_MAX_PBUFS /;"	macro	line:209
+CONFIG_APP_OFFSET	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_APP_OFFSET /;"	macro	line:210
+CONFIG_MEMMAP_SMP	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MEMMAP_SMP /;"	macro	line:211
+CONFIG_SPI_FLASH_ROM_DRIVER_PATCH	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SPI_FLASH_ROM_DRIVER_PATCH /;"	macro	line:212
+CONFIG_MBEDTLS_ECP_DP_SECP192K1_ENABLED	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MBEDTLS_ECP_DP_SECP192K1_ENABLED /;"	macro	line:213
+CONFIG_TASK_WDT_CHECK_IDLE_TASK_CPU0	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_TASK_WDT_CHECK_IDLE_TASK_CPU0 /;"	macro	line:214
+CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESP32_PTHREAD_TASK_STACK_SIZE_DEFAULT /;"	macro	line:215
+CONFIG_MONITOR_BAUD_OTHER_VAL	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_MONITOR_BAUD_OTHER_VAL /;"	macro	line:216
+CONFIG_NEWLIB_STDOUT_LINE_ENDING_CRLF	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_NEWLIB_STDOUT_LINE_ENDING_CRLF /;"	macro	line:217
+CONFIG_ESPTOOLPY_PORT	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_ESPTOOLPY_PORT /;"	macro	line:218
+CONFIG_SPI_FLASH_WRITING_DANGEROUS_REGIONS_ABORTS	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_SPI_FLASH_WRITING_DANGEROUS_REGIONS_ABORTS /;"	macro	line:219
+CONFIG_BLUEDROID_PINNED_TO_CORE	/home/jan/Workspace/git/masters_thesis/advertiser/build/include/sdkconfig.h	/^#define CONFIG_BLUEDROID_PINNED_TO_CORE /;"	macro	line:220
+PID_H_	/home/jan/Workspace/git/masters_thesis/extern/pid .h	/^#define PID_H_$/;"	macro	line:2
+_PLATFORM_H_	/home/jan/Workspace/git/masters_thesis/extern/platform.h	/^#define _PLATFORM_H_$/;"	macro	line:2
+ERR_SUM_MAX	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^#define ERR_SUM_MAX	/;"	macro	line:3	file:
+pid_param_t	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^typedef double pid_param_t;$/;"	typedef	line:5	file:
+pid_err_t	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^typedef double pid_err_t;$/;"	typedef	line:6	file:
+pid_param	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^struct pid_param$/;"	struct	line:8	file:
+kp	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^	pid_param_t kp;$/;"	member	line:10	struct:pid_param	file:
+ki	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^	pid_param_t ki;$/;"	member	line:11	struct:pid_param	file:
+kd	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^	pid_param_t kd;$/;"	member	line:12	struct:pid_param	file:
+err	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^	pid_err_t err;$/;"	member	line:13	struct:pid_param	file:
+err_sum	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^	pid_err_t err_sum;$/;"	member	line:14	struct:pid_param	file:
+err_last	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^	pid_err_t err_last;$/;"	member	line:15	struct:pid_param	file:
+pid_parameters	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^static struct pid_param pid_parameters;$/;"	variable	line:18	typeref:struct:pid_param	file:
+pid_init	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^void pid_init(pid_param_t kp_set, pid_param_t ki_set, pid_param_t kd_set)$/;"	function	line:20	signature:(pid_param_t kp_set, pid_param_t ki_set, pid_param_t kd_set)
+pid_calculate	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^float pid_calculate(float set_val, float read_val)$/;"	function	line:25	signature:(float set_val, float read_val)
+RAND_DIV	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^#define RAND_DIV /;"	macro	line:15	file:
+position_d	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^typedef double position_d;$/;"	typedef	line:16	file:
+pid_type_d	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^typedef double pid_type_d;$/;"	typedef	line:17	file:
+motor_values_d	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^typedef double motor_values_d;$/;"	typedef	line:18	file:
+MOTOR_DC	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_DC = 1,$/;"	enumerator	line:21	enum:__anon10	file:
+MOTOR_AC	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_AC,$/;"	enumerator	line:22	enum:__anon10	file:
+MOTOR_ACDC	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_ACDC,$/;"	enumerator	line:23	enum:__anon10	file:
+MOTOR_NONE	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_NONE,$/;"	enumerator	line:24	enum:__anon10	file:
+MOTOR_LOCAL	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_LOCAL,$/;"	enumerator	line:26	enum:__anon10	file:
+MOTOR_GLOBAL	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_GLOBAL,$/;"	enumerator	line:27	enum:__anon10	file:
+MOTOR_DONE	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_DONE$/;"	enumerator	line:28	enum:__anon10	file:
+motor_type_t	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^} motor_type_t;$/;"	typedef	line:29	typeref:enum:__anon10	file:
+motor	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^struct motor{$/;"	struct	line:31	file:
+Power	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    const int Power;$/;"	member	line:32	struct:motor	file:
+Voltage	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    const int Voltage;$/;"	member	line:33	struct:motor	file:
+Speed	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    const double Speed;$/;"	member	line:34	struct:motor	file:
+Curent	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    const double Curent;$/;"	member	line:35	struct:motor	file:
+Name	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    char Name;$/;"	member	line:37	struct:motor	file:
+CurentTmp	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    motor_values_d CurentTmp;$/;"	member	line:38	struct:motor	file:
+SpeedTmp	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    motor_values_d SpeedTmp;$/;"	member	line:39	struct:motor	file:
+LoadMultipler	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    motor_values_d LoadMultipler;$/;"	member	line:40	struct:motor	file:
+motorObjectGlobal	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^struct motor *motorObjectGlobal;$/;"	variable	line:44	typeref:struct:motor
+motorTakeLoad	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^motor_values_d motorTakeLoad(motor_type_t motor__, motor_values_d Load)$/;"	function	line:46	signature:(motor_type_t motor__, motor_values_d Load)
+motorMake	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void motorMake(motor_type_t motorType, char* MotorName){$/;"	function	line:54	signature:(motor_type_t motorType, char* MotorName)
+motorRandLoad	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^motor_values_d motorRandLoad()$/;"	function	line:65
+motorIn	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void motorIn(motor_values_d input)$/;"	function	line:71	signature:(motor_values_d input)
+motorOut	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void motorOut(motor_values_d output)$/;"	function	line:75	signature:(motor_values_d output)
+pwmOutShow	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void pwmOutShow(pid_type_d currentPWM)$/;"	function	line:79	signature:(pid_type_d currentPWM)
+getPositionTarget	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^position_d getPositionTarget()$/;"	function	line:83
+readCurrentPosition	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^position_d readCurrentPosition()$/;"	function	line:93
+limit	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^double limit(double limit, double limitated)$/;"	function	line:103	signature:(double limit, double limitated)
+PIDcontroll	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void PIDcontroll()$/;"	function	line:116
+main	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^int main()$/;"	function	line:155
+PROJECT_NAME	/home/jan/Workspace/git/masters_thesis/gatt_server/Makefile	/^PROJECT_NAME := gatt_server_demos$/;"	macro	line:6
+COMPONENT_ADD_INCLUDEDIRS	/home/jan/Workspace/git/masters_thesis/gatt_server/Makefile	/^COMPONENT_ADD_INCLUDEDIRS := components\/include$/;"	macro	line:8
+GATTS_TAG	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define GATTS_TAG /;"	macro	line:45	file:
+GATTS_SERVICE_UUID_TEST_A	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define GATTS_SERVICE_UUID_TEST_A /;"	macro	line:51	file:
+GATTS_CHAR_UUID_TEST_A	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define GATTS_CHAR_UUID_TEST_A /;"	macro	line:52	file:
+GATTS_DESCR_UUID_TEST_A	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define GATTS_DESCR_UUID_TEST_A /;"	macro	line:53	file:
+GATTS_NUM_HANDLE_TEST_A	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define GATTS_NUM_HANDLE_TEST_A /;"	macro	line:54	file:
+GATTS_SERVICE_UUID_TEST_B	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define GATTS_SERVICE_UUID_TEST_B /;"	macro	line:56	file:
+GATTS_CHAR_UUID_TEST_B	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define GATTS_CHAR_UUID_TEST_B /;"	macro	line:57	file:
+GATTS_DESCR_UUID_TEST_B	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define GATTS_DESCR_UUID_TEST_B /;"	macro	line:58	file:
+GATTS_NUM_HANDLE_TEST_B	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define GATTS_NUM_HANDLE_TEST_B /;"	macro	line:59	file:
+TEST_DEVICE_NAME	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define TEST_DEVICE_NAME /;"	macro	line:61	file:
+TEST_MANUFACTURER_DATA_LEN	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define TEST_MANUFACTURER_DATA_LEN /;"	macro	line:62	file:
+GATTS_DEMO_CHAR_VAL_LEN_MAX	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define GATTS_DEMO_CHAR_VAL_LEN_MAX /;"	macro	line:64	file:
+PREPARE_BUF_MAX_SIZE	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define PREPARE_BUF_MAX_SIZE /;"	macro	line:66	file:
+char1_str	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^uint8_t char1_str[] = {0x11,0x22,0x33};$/;"	variable	line:68
+a_property	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^esp_gatt_char_prop_t a_property = 0;$/;"	variable	line:69
+b_property	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^esp_gatt_char_prop_t b_property = 0;$/;"	variable	line:70
+gatts_demo_char1_val	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^esp_attr_value_t gatts_demo_char1_val =$/;"	variable	line:72
+adv_config_done	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static uint8_t adv_config_done = 0;$/;"	variable	line:79	file:
+adv_config_flag	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define adv_config_flag /;"	macro	line:80	file:
+scan_rsp_config_flag	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define scan_rsp_config_flag /;"	macro	line:81	file:
+raw_adv_data	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static uint8_t raw_adv_data[] = {$/;"	variable	line:84	file:
+raw_scan_rsp_data	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static uint8_t raw_scan_rsp_data[] = {$/;"	variable	line:88	file:
+adv_service_uuid128	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static uint8_t adv_service_uuid128[32] = {$/;"	variable	line:94	file:
+adv_data	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static esp_ble_adv_data_t adv_data = {$/;"	variable	line:105	file:
+scan_rsp_data	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static esp_ble_adv_data_t scan_rsp_data = {$/;"	variable	line:121	file:
+adv_params	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static esp_ble_adv_params_t adv_params = {$/;"	variable	line:139	file:
+PROFILE_NUM	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define PROFILE_NUM /;"	macro	line:150	file:
+PROFILE_A_APP_ID	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define PROFILE_A_APP_ID /;"	macro	line:151	file:
+PROFILE_B_APP_ID	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define PROFILE_B_APP_ID /;"	macro	line:152	file:
+gatts_profile_inst	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^struct gatts_profile_inst {$/;"	struct	line:154	file:
+gatts_cb	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    esp_gatts_cb_t gatts_cb;$/;"	member	line:155	struct:gatts_profile_inst	file:
+gatts_if	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    uint16_t gatts_if;$/;"	member	line:156	struct:gatts_profile_inst	file:
+app_id	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    uint16_t app_id;$/;"	member	line:157	struct:gatts_profile_inst	file:
+conn_id	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    uint16_t conn_id;$/;"	member	line:158	struct:gatts_profile_inst	file:
+service_handle	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    uint16_t service_handle;$/;"	member	line:159	struct:gatts_profile_inst	file:
+service_id	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    esp_gatt_srvc_id_t service_id;$/;"	member	line:160	struct:gatts_profile_inst	file:
+char_handle	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    uint16_t char_handle;$/;"	member	line:161	struct:gatts_profile_inst	file:
+char_uuid	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    esp_bt_uuid_t char_uuid;$/;"	member	line:162	struct:gatts_profile_inst	file:
+perm	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    esp_gatt_perm_t perm;$/;"	member	line:163	struct:gatts_profile_inst	file:
+property	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    esp_gatt_char_prop_t property;$/;"	member	line:164	struct:gatts_profile_inst	file:
+descr_handle	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    uint16_t descr_handle;$/;"	member	line:165	struct:gatts_profile_inst	file:
+descr_uuid	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    esp_bt_uuid_t descr_uuid;$/;"	member	line:166	struct:gatts_profile_inst	file:
+gl_profile_tab	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static struct gatts_profile_inst gl_profile_tab[PROFILE_NUM] = {$/;"	variable	line:170	typeref:struct:gatts_profile_inst	file:
+prepare_buf	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    uint8_t                 *prepare_buf;$/;"	member	line:182	struct:__anon11	file:
+prepare_len	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^    int                     prepare_len;$/;"	member	line:183	struct:__anon11	file:
+prepare_type_env_t	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^} prepare_type_env_t;$/;"	typedef	line:184	typeref:struct:__anon11	file:
+a_prepare_write_env	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static prepare_type_env_t a_prepare_write_env;$/;"	variable	line:186	file:
+b_prepare_write_env	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static prepare_type_env_t b_prepare_write_env;$/;"	variable	line:187	file:
+gap_event_handler	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static void gap_event_handler(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)$/;"	function	line:192	file:	signature:(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
+example_write_event_env	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^void example_write_event_env(esp_gatt_if_t gatts_if, prepare_type_env_t *prepare_write_env, esp_ble_gatts_cb_param_t *param){$/;"	function	line:250	signature:(esp_gatt_if_t gatts_if, prepare_type_env_t *prepare_write_env, esp_ble_gatts_cb_param_t *param)
+example_exec_write_event_env	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^void example_exec_write_event_env(prepare_type_env_t *prepare_write_env, esp_ble_gatts_cb_param_t *param){$/;"	function	line:294	signature:(prepare_type_env_t *prepare_write_env, esp_ble_gatts_cb_param_t *param)
+gatts_profile_a_event_handler	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param) {$/;"	function	line:307	file:	signature:(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param)
+gatts_profile_b_event_handler	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static void gatts_profile_b_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param) {$/;"	function	line:509	file:	signature:(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param)
+gatts_event_handler	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^static void gatts_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param)$/;"	function	line:653	file:	signature:(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param)
+app_main	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^void app_main()$/;"	function	line:682
+PROJECT_NAME	/home/jan/Workspace/git/masters_thesis/gatt_client/Makefile	/^PROJECT_NAME := gatt_client_demo$/;"	macro	line:6
+COMPONENT_ADD_INCLUDEDIRS	/home/jan/Workspace/git/masters_thesis/gatt_client/Makefile	/^COMPONENT_ADD_INCLUDEDIRS := components\/include$/;"	macro	line:8
+GATTC_TAG	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^#define GATTC_TAG /;"	macro	line:41	file:
+REMOTE_SERVICE_UUID	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^#define REMOTE_SERVICE_UUID /;"	macro	line:42	file:
+REMOTE_NOTIFY_CHAR_UUID	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^#define REMOTE_NOTIFY_CHAR_UUID /;"	macro	line:43	file:
+PROFILE_NUM	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^#define PROFILE_NUM /;"	macro	line:44	file:
+PROFILE_A_APP_ID	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^#define PROFILE_A_APP_ID /;"	macro	line:45	file:
+INVALID_HANDLE	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^#define INVALID_HANDLE /;"	macro	line:46	file:
+remote_device_name	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^static const char remote_device_name[] = "ESP_GATTS_DEMO";$/;"	variable	line:48	file:
+connect	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^static bool connect    = false;$/;"	variable	line:49	file:
+get_server	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^static bool get_server = false;$/;"	variable	line:50	file:
+char_elem_result	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^static esp_gattc_char_elem_t *char_elem_result   = NULL;$/;"	variable	line:51	file:
+descr_elem_result	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^static esp_gattc_descr_elem_t *descr_elem_result = NULL;$/;"	variable	line:52	file:
+remote_filter_service_uuid	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^static esp_bt_uuid_t remote_filter_service_uuid = {$/;"	variable	line:60	file:
+remote_filter_char_uuid	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^static esp_bt_uuid_t remote_filter_char_uuid = {$/;"	variable	line:65	file:
+notify_descr_uuid	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^static esp_bt_uuid_t notify_descr_uuid = {$/;"	variable	line:70	file:
+ble_scan_params	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^static esp_ble_scan_params_t ble_scan_params = {$/;"	variable	line:75	file:
+gattc_profile_inst	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^struct gattc_profile_inst {$/;"	struct	line:83	file:
+gattc_cb	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^    esp_gattc_cb_t gattc_cb;$/;"	member	line:84	struct:gattc_profile_inst	file:
+gattc_if	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^    uint16_t gattc_if;$/;"	member	line:85	struct:gattc_profile_inst	file:
+app_id	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^    uint16_t app_id;$/;"	member	line:86	struct:gattc_profile_inst	file:
+conn_id	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^    uint16_t conn_id;$/;"	member	line:87	struct:gattc_profile_inst	file:
+service_start_handle	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^    uint16_t service_start_handle;$/;"	member	line:88	struct:gattc_profile_inst	file:
+service_end_handle	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^    uint16_t service_end_handle;$/;"	member	line:89	struct:gattc_profile_inst	file:
+char_handle	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^    uint16_t char_handle;$/;"	member	line:90	struct:gattc_profile_inst	file:
+remote_bda	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^    esp_bd_addr_t remote_bda;$/;"	member	line:91	struct:gattc_profile_inst	file:
+gl_profile_tab	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^static struct gattc_profile_inst gl_profile_tab[PROFILE_NUM] = {$/;"	variable	line:95	typeref:struct:gattc_profile_inst	file:
+gattc_profile_event_handler	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^static void gattc_profile_event_handler(esp_gattc_cb_event_t event, esp_gatt_if_t gattc_if, esp_ble_gattc_cb_param_t *param)$/;"	function	line:102	file:	signature:(esp_gattc_cb_event_t event, esp_gatt_if_t gattc_if, esp_ble_gattc_cb_param_t *param)
+esp_gap_cb	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)$/;"	function	line:309	file:	signature:(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
+esp_gattc_cb	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^static void esp_gattc_cb(esp_gattc_cb_event_t event, esp_gatt_if_t gattc_if, esp_ble_gattc_cb_param_t *param)$/;"	function	line:389	file:	signature:(esp_gattc_cb_event_t event, esp_gatt_if_t gattc_if, esp_ble_gattc_cb_param_t *param)
+app_main	/home/jan/Workspace/git/masters_thesis/gatt_client/main/gattc_demo.c	/^void app_main()$/;"	function	line:418
+log_U	/home/jan/Workspace/git/masters_thesis/intro.h	/^char *log_U = ":: JAN_LOG ::";$/;"	variable	line:1
+esp_gap_cb	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)$/;"	function	line:3	signature:(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
+ble_broadcasterInit	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_broadcasterInit(uint8_t *raw_adv_data)$/;"	function	line:61	signature:(uint8_t *raw_adv_data)
+ble_broadcasterStart	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_broadcasterStart()$/;"	function	line:94
+ble_observerInit	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_observerInit()$/;"	function	line:103
+ble_observerDataCopy	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_observerDataCopy(uint8_t  *ble_adv, uint8_t adv_data_len, uint8_t *adv_data)$/;"	function	line:116	signature:(uint8_t *ble_adv, uint8_t adv_data_len, uint8_t *adv_data)
+ble_observerStart	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_observerStart()$/;"	function	line:126
+UV_LOG	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^void UV_LOG(char *text)$/;"	function	line:136	signature:(char *text)
