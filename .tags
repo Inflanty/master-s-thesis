@@ -582,39 +582,6 @@ err_last	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^	pid_err_t err_l
 pid_parameters	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^static struct pid_param pid_parameters;$/;"	variable	line:18	typeref:struct:pid_param	file:
 pid_init	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^void pid_init(pid_param_t kp_set, pid_param_t ki_set, pid_param_t kd_set)$/;"	function	line:20	signature:(pid_param_t kp_set, pid_param_t ki_set, pid_param_t kd_set)
 pid_calculate	/home/jan/Workspace/git/masters_thesis/extern/pid .c	/^float pid_calculate(float set_val, float read_val)$/;"	function	line:25	signature:(float set_val, float read_val)
-RAND_DIV	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^#define RAND_DIV /;"	macro	line:15	file:
-position_d	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^typedef double position_d;$/;"	typedef	line:16	file:
-pid_type_d	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^typedef double pid_type_d;$/;"	typedef	line:17	file:
-motor_values_d	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^typedef double motor_values_d;$/;"	typedef	line:18	file:
-MOTOR_DC	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_DC = 1,$/;"	enumerator	line:21	enum:__anon10	file:
-MOTOR_AC	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_AC,$/;"	enumerator	line:22	enum:__anon10	file:
-MOTOR_ACDC	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_ACDC,$/;"	enumerator	line:23	enum:__anon10	file:
-MOTOR_NONE	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_NONE,$/;"	enumerator	line:24	enum:__anon10	file:
-MOTOR_LOCAL	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_LOCAL,$/;"	enumerator	line:26	enum:__anon10	file:
-MOTOR_GLOBAL	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_GLOBAL,$/;"	enumerator	line:27	enum:__anon10	file:
-MOTOR_DONE	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_DONE$/;"	enumerator	line:28	enum:__anon10	file:
-motor_type_t	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^} motor_type_t;$/;"	typedef	line:29	typeref:enum:__anon10	file:
-motor	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^struct motor{$/;"	struct	line:31	file:
-Power	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    const int Power;$/;"	member	line:32	struct:motor	file:
-Voltage	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    const int Voltage;$/;"	member	line:33	struct:motor	file:
-Speed	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    const double Speed;$/;"	member	line:34	struct:motor	file:
-Curent	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    const double Curent;$/;"	member	line:35	struct:motor	file:
-Name	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    char Name;$/;"	member	line:37	struct:motor	file:
-CurentTmp	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    motor_values_d CurentTmp;$/;"	member	line:38	struct:motor	file:
-SpeedTmp	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    motor_values_d SpeedTmp;$/;"	member	line:39	struct:motor	file:
-LoadMultipler	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    motor_values_d LoadMultipler;$/;"	member	line:40	struct:motor	file:
-motorObjectGlobal	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^struct motor *motorObjectGlobal;$/;"	variable	line:44	typeref:struct:motor
-motorTakeLoad	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^motor_values_d motorTakeLoad(motor_type_t motor__, motor_values_d Load)$/;"	function	line:46	signature:(motor_type_t motor__, motor_values_d Load)
-motorMake	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void motorMake(motor_type_t motorType, char* MotorName){$/;"	function	line:54	signature:(motor_type_t motorType, char* MotorName)
-motorRandLoad	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^motor_values_d motorRandLoad()$/;"	function	line:65
-motorIn	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void motorIn(motor_values_d input)$/;"	function	line:71	signature:(motor_values_d input)
-motorOut	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void motorOut(motor_values_d output)$/;"	function	line:75	signature:(motor_values_d output)
-pwmOutShow	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void pwmOutShow(pid_type_d currentPWM)$/;"	function	line:79	signature:(pid_type_d currentPWM)
-getPositionTarget	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^position_d getPositionTarget()$/;"	function	line:83
-readCurrentPosition	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^position_d readCurrentPosition()$/;"	function	line:93
-limit	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^double limit(double limit, double limitated)$/;"	function	line:103	signature:(double limit, double limitated)
-PIDcontroll	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void PIDcontroll()$/;"	function	line:116
-main	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^int main()$/;"	function	line:155
 PROJECT_NAME	/home/jan/Workspace/git/masters_thesis/gatt_server/Makefile	/^PROJECT_NAME := gatt_server_demos$/;"	macro	line:6
 COMPONENT_ADD_INCLUDEDIRS	/home/jan/Workspace/git/masters_thesis/gatt_server/Makefile	/^COMPONENT_ADD_INCLUDEDIRS := components\/include$/;"	macro	line:8
 GATTS_TAG	/home/jan/Workspace/git/masters_thesis/gatt_server/main/gatts_demo.c	/^#define GATTS_TAG /;"	macro	line:45	file:
@@ -711,3 +678,54 @@ ble_observerInit	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	
 ble_observerDataCopy	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_observerDataCopy(uint8_t  *ble_adv, uint8_t adv_data_len, uint8_t *adv_data)$/;"	function	line:116	signature:(uint8_t *ble_adv, uint8_t adv_data_len, uint8_t *adv_data)
 ble_observerStart	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_observerStart()$/;"	function	line:126
 UV_LOG	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^void UV_LOG(char *text)$/;"	function	line:136	signature:(char *text)
+RAND_DIV	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^#define RAND_DIV /;"	macro	line:16	file:
+position_d	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^typedef double position_d;$/;"	typedef	line:17	file:
+pid_type_d	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^typedef double pid_type_d;$/;"	typedef	line:18	file:
+motor_values_d	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^typedef double motor_values_d;$/;"	typedef	line:19	file:
+MOTOR_DC	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_DC = 1,$/;"	enumerator	line:22	enum:__anon1	file:
+MOTOR_AC	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_AC,$/;"	enumerator	line:23	enum:__anon1	file:
+MOTOR_ACDC	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_ACDC,$/;"	enumerator	line:24	enum:__anon1	file:
+MOTOR_NONE	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_NONE,$/;"	enumerator	line:25	enum:__anon1	file:
+MOTOR_LOCAL	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_LOCAL,$/;"	enumerator	line:27	enum:__anon1	file:
+MOTOR_GLOBAL	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_GLOBAL,$/;"	enumerator	line:28	enum:__anon1	file:
+MOTOR_DONE	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    MOTOR_DONE$/;"	enumerator	line:29	enum:__anon1	file:
+motor_type_t	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^} motor_type_t;$/;"	typedef	line:30	typeref:enum:__anon1	file:
+motor	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^struct motor{$/;"	struct	line:32	file:
+Power	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    const int Power;$/;"	member	line:33	struct:motor	file:
+Voltage	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    const int Voltage;$/;"	member	line:34	struct:motor	file:
+Speed	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    const double Speed;$/;"	member	line:35	struct:motor	file:
+Curent	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    const double Curent;$/;"	member	line:36	struct:motor	file:
+Name	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    char Name;$/;"	member	line:38	struct:motor	file:
+CurentTmp	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    motor_values_d CurentTmp;$/;"	member	line:39	struct:motor	file:
+SpeedTmp	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    motor_values_d SpeedTmp;$/;"	member	line:40	struct:motor	file:
+LoadMultipler	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^    motor_values_d LoadMultipler;$/;"	member	line:41	struct:motor	file:
+motorObjectGlobal	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^struct motor *motorObjectGlobal;$/;"	variable	line:45	typeref:struct:motor
+motorTakeLoad	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^motor_values_d motorTakeLoad(motor_type_t motor__, motor_values_d Load)$/;"	function	line:47	signature:(motor_type_t motor__, motor_values_d Load)
+motorMake	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void motorMake(motor_type_t motorType, char* MotorName){$/;"	function	line:55	signature:(motor_type_t motorType, char* MotorName)
+motorRandLoad	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^motor_values_d motorRandLoad()$/;"	function	line:66
+motorIn	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void motorIn(motor_values_d input)$/;"	function	line:72	signature:(motor_values_d input)
+motorOut	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void motorOut(motor_values_d output)$/;"	function	line:76	signature:(motor_values_d output)
+pwmOutShow	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void pwmOutShow(pid_type_d currentPWM)$/;"	function	line:80	signature:(pid_type_d currentPWM)
+getPositionTarget	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^position_d getPositionTarget()$/;"	function	line:84
+readCurrentPosition	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^position_d readCurrentPosition()$/;"	function	line:94
+limit	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^double limit(double limit, double limitated)$/;"	function	line:104	signature:(double limit, double limitated)
+PIDcontroll	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void PIDcontroll()$/;"	function	line:117
+call	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^void call(int (*fncXlib)(call_reason_t), call_reason_t theSzama)$/;"	function	line:153	signature:(int (*fncXlib)(call_reason_t), call_reason_t theSzama)
+main	/home/jan/Workspace/git/masters_thesis/extern/main.c	/^int main()$/;"	function	line:161
+caloriesValue	/home/jan/Workspace/git/masters_thesis/extern/calllib.c	/^int caloriesValue(call_reason_t reason)$/;"	function	line:3	signature:(call_reason_t reason)
+holdRegister	/home/jan/Workspace/git/masters_thesis/extern/calllib.c	/^bool holdRegister(holdingRegister *regReceive)$/;"	function	line:31	signature:(holdingRegister *regReceive)
+_CALLLIB_H_	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^#define _CALLLIB_H_$/;"	macro	line:2
+registerVal	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^#define registerVal /;"	macro	line:7
+PIZZA	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    PIZZA = 0,$/;"	enumerator	line:10	enum:__anon1
+BURGER	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    BURGER,$/;"	enumerator	line:11	enum:__anon1
+LASAGNE	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    LASAGNE,$/;"	enumerator	line:12	enum:__anon1
+FRIES	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    FRIES,$/;"	enumerator	line:13	enum:__anon1
+CHIP	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    CHIP,$/;"	enumerator	line:14	enum:__anon1
+CAKES	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    CAKES,$/;"	enumerator	line:15	enum:__anon1
+ALL_WITH_FAT	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    ALL_WITH_FAT,$/;"	enumerator	line:16	enum:__anon1
+call_reason_t	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^}call_reason_t;$/;"	typedef	line:17	typeref:enum:__anon1
+hold	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    bool hold;$/;"	member	line:22	struct:__anon2
+data	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    uint8_t data[registerVal];$/;"	member	line:23	struct:__anon2
+holdingRegister	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^}holdingRegister;$/;"	typedef	line:24	typeref:struct:__anon2
+dataRx	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^holdingRegister *dataRx, *dataTx;$/;"	variable	line:27
+dataTx	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^holdingRegister *dataRx, *dataTx;$/;"	variable	line:27

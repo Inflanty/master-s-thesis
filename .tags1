@@ -4,10 +4,18 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-esp_gap_cb	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)$/;"	function	line:3	signature:(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
-ble_broadcasterInit	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_broadcasterInit(uint8_t *raw_adv_data)$/;"	function	line:61	signature:(uint8_t *raw_adv_data)
-ble_broadcasterStart	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_broadcasterStart()$/;"	function	line:94
-ble_observerInit	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_observerInit()$/;"	function	line:103
-ble_observerDataCopy	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_observerDataCopy(uint8_t  *ble_adv, uint8_t adv_data_len, uint8_t *adv_data)$/;"	function	line:116	signature:(uint8_t *ble_adv, uint8_t adv_data_len, uint8_t *adv_data)
-ble_observerStart	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^ble_response ble_observerStart()$/;"	function	line:126
-UV_LOG	/home/jan/Workspace/git/masters_thesis/ble_adv/main/gap_call.c	/^void UV_LOG(char *text)$/;"	function	line:136	signature:(char *text)
+_CALLLIB_H_	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^#define _CALLLIB_H_$/;"	macro	line:2
+registerVal	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^#define registerVal /;"	macro	line:7
+PIZZA	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    PIZZA = 0,$/;"	enumerator	line:10	enum:__anon1
+BURGER	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    BURGER,$/;"	enumerator	line:11	enum:__anon1
+LASAGNE	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    LASAGNE,$/;"	enumerator	line:12	enum:__anon1
+FRIES	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    FRIES,$/;"	enumerator	line:13	enum:__anon1
+CHIP	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    CHIP,$/;"	enumerator	line:14	enum:__anon1
+CAKES	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    CAKES,$/;"	enumerator	line:15	enum:__anon1
+ALL_WITH_FAT	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    ALL_WITH_FAT,$/;"	enumerator	line:16	enum:__anon1
+call_reason_t	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^}call_reason_t;$/;"	typedef	line:17	typeref:enum:__anon1
+hold	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    bool hold;$/;"	member	line:22	struct:__anon2
+data	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^    uint8_t data[registerVal];$/;"	member	line:23	struct:__anon2
+holdingRegister	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^}holdingRegister;$/;"	typedef	line:24	typeref:struct:__anon2
+dataRx	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^holdingRegister *dataRx, *dataTx;$/;"	variable	line:27
+dataTx	/home/jan/Workspace/git/masters_thesis/extern/calllib.h	/^holdingRegister *dataRx, *dataTx;$/;"	variable	line:27

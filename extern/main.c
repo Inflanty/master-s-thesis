@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../intro.h"
+#include "calllib.h"
 
 #define RAND_DIV 70
 typedef double position_d;
@@ -149,22 +150,17 @@ void PIDcontroll()
         printf("EXIT :: PWM = %f\n", (double) pwm);
     }
 }
+void call(int (*fncXlib)(call_reason_t), call_reason_t theSzama)
+{
+    int szamaValue = fncXlib(theSzama);
+    printf("Your szama provide you %d calories, goodbye fit life\n", szamaValue);
+}
 
 
 
 int main()
 {
-   // struct motor MotorDC = {/*.Name = *MotorName,*/ .SpeedTmp = 0, .CurentTmp = 0, };
-/*
-    void *x = malloc(sizeof(struct deneme));
-    memcpy(x, &data, sizeof(struct deneme));
-    return (struct deneme*) x;
-
-    struct motor motorData;
-    void *motorStructAdd = malloc(sizeof(struct motor));
-    memcpy(motorStructAdd, &motorData, sizeof(struct motor));
-*/
-
     printf("%s\n", log_U);
+    call(caloriesValue, BURGER);
     return 0;
 }
