@@ -9,7 +9,7 @@ ROLE choice:
 	-Broadcaster
 	-Server
 	-Client
-	
+
 FEATURE choice:
 	-Advertising :
 		*Broadcast
@@ -21,19 +21,46 @@ FEATURE choice:
 
 Data interchange :
 	Globals data struct, when multitasking - data must be bloced for calculate time
-	
+
 Data block options:
 	-Blocking		- If you want to block the specific data when one task is calculating
 	-None blocking	- Non blocking option
 	-Scharing		- If you don't want to block the data by one task you can use doubled data matrix - first place for calculating data, second place for old data
 	-Block Scharing - Like in sharing options but both of position are bloced as long as both are different
-	
+
 	struct:
 		+bool block
-		
+
 		+uint8_t data			<- in case of using blocking/noneblocking method
-		+uint16_t schare_data 	<- in case of using scharing mathod
-		
+		+uint16_t schare_data 		<- in case of using scharing mathod
+		+origin_type_t origin		<- data origin (peripheral device)
 		+bool (*block_data)()
 		+bool (*schare_data)()
+		+*uint8_t (*read_data)()
+		+bool (*block_off)()
+,
 
+typedef enum{
+	ACCELEROMETRER,
+	CURRENT,
+	BLE_NOTIFICATION,
+	BLE_ADVERTISING,
+	BLE_WRITE,
+	NONE;
+}origin_type_t
+
+
+*******************************************************************************
+data saving:
+	global data blocking
+	data save,
+	helper variables updating,
+	block off.
+
+SEGGER SystemView:
+	-first, include "SEGGER_SYSVIEW.h".
+	-systemConfiguration();
+	-SEGGER_SYSVIEW_Conf();
+	-run multitasking
+
+	Probably, you need to modify SEGGER_SYSVIEW_Conf.h file, and run ISR with SEGGER_SYSVIEW_Start/Stop <- to check.
