@@ -22,3 +22,11 @@ On main board instalated FreeRTOS stack, all tasks are controlled by scheluder. 
 
 ## Sensor Board
 ![](doc/img/thingy.jpg)
+
+## Bibliography
+
+* "Bluetooth Essentials for Programmers" - Albert S. Huang, Larry Rudolph | Massachusetts Institute of Technology
+
+* "Getting Started with Bluetooth Low Energy: Tools and Techniques for Low-Power Networking" - Robert Davidson, Kevin Townsend, Chris Wang, Carles Cufí | ISBN 978-0-521-70375-8
+
+* "Sensory i Systemy Pomiarowe" - Robert Czabanowski | ISBN 978-83-7493-559-3
