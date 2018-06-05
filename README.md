@@ -4,7 +4,7 @@ The project is composed with a three parts:
 * ANALYSIS
 * AQUISITION and CONTROL
 * PROCESS
-![](doc/img/mastersthesis.png)
+![](doc/img/martersthesis.png)
 
 ## Main Board
 ### HW
