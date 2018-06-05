@@ -30,3 +30,7 @@ On main board instalated FreeRTOS stack, all tasks are controlled by scheluder. 
 * "Getting Started with Bluetooth Low Energy: Tools and Techniques for Low-Power Networking" - Robert Davidson, Kevin Townsend, Chris Wang, Carles Cufí | ISBN 978-0-521-70375-8
 
 * "Sensory i Systemy Pomiarowe" - Robert Czabanowski | ISBN 978-83-7493-559-3
+
+* "Bluetooth Core Specification" - Bluetooth SIG Proprietary
+
+* "Bluetooth 5.0 Specification" - Bluetooth SIG Proprietary
