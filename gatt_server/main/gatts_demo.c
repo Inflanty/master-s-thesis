@@ -1,25 +1,4 @@
-// Copyright 2015-2017 Espressif Systems (Shanghai) PTE LTD
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-/****************************************************************************
-*
-* This file is for gatt server. It can send adv data, be connected by client.
-* Run the gatt_client demo, the client demo will automatically connect to the gatt_server demo.
-* Client demo will enable gatt_server's notify after connection. Then two devices will exchange
-* data.
-*
-****************************************************************************/
+// TODO : ADD license
 
 
 #include <stdio.h>

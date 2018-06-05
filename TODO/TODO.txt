@@ -26,16 +26,16 @@ Data block options:
 	-Blocking		- If you want to block the specific data when one task is calculating
 	-None blocking	- Non blocking option
 	-Scharing		- If you don't want to block the data by one task you can use doubled data matrix - first place for calculating data, second place for old data
-	-Block Scharing - Like in sharing options but both of position are bloced as long as both are different
+	-Block Sharing - Like in sharing options but both of position are bloced as long as both are different
 
 	struct:
 		+bool block
 
 		+uint8_t data			<- in case of using blocking/noneblocking method
-		+uint16_t schare_data 		<- in case of using scharing mathod
+		+uint16_t share_data 		<- in case of using sharing mathod
 		+origin_type_t origin		<- data origin (peripheral device)
 		+bool (*block_data)()
-		+bool (*schare_data)()
+		+bool (*share_data)()
 		+*uint8_t (*read_data)()
 		+bool (*block_off)()
 ,
