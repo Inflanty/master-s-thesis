@@ -1,4 +1,8 @@
-# master-s-thesis
+# Master's Thesis
+
+## "Bezprzewodowy system sterowania z wykorzystaniem systemu czasu rzeczywistego FreeRTOS"  
+` "Wireless control system using FreeRTOS" `
+
 Master's thesis to obtain the degree Master of Science.
 The project is composed with a three parts:
 * ANALYSIS
