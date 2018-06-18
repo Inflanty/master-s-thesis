@@ -29,3 +29,27 @@ QUESTION
 Let's say we have hipotetic situation:
     Someone at the university ask you about my master's thesis,
     You should give him briefly discription, can you do this ?
+
+
+It's good to see all of you today, I'm gonna provide you by briefly introduction for my master's thesis.
+Let's Start.
+
+My project consist of three piece - As you can see on the sketch.
+Those parts could represent three not conected, selfstanding features.
+
+So, First part provide the space for controll and graphical analysis,
+this part based on PC tools and Android APP.
+
+The second part consist of two wireless devices.
+First device : Should controll some mechanical proccess and supporting the users by ordinary User Interface.
+Second device : Battery supplied device for sensor purpose, equiped with 9-axis motion sensing (accelerometer, gyroscope and compass), Environment Sensors.
+
+First device provide the main board for the project, it's development tool from nordic semiconductor with basic user interface, bluetooth stack, ARM Cortex M4F proccessor and debugging co-processor. Work under FreeRTOS - real time operating system.
+Second device manufacturer by Nordic Semiconductor - Thingy :52 - Wireless sensors board with battery supply and dedicated case.
+
+Third part  - hardware proccess site contain only DC motor as executive machine.
+
+How it's works ?
+Very simple - the main board control the process (it's mean DC motor) based only on data from Thingy board streamed by bluetooth BLE.
+Proces's variables like an current angle and torque will be displayed on PC connected to the main board's co-processor.
+The point is to show availability of proccess control in big data streaming system and check procesor load and FreeRTOS tasks scheluding.
