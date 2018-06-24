@@ -1,0 +1,74 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+FREERTOS_CONFIG_H	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define FREERTOS_CONFIG_H$/;"	macro	line:31
+FREERTOS_USE_RTC	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define FREERTOS_USE_RTC /;"	macro	line:41
+FREERTOS_USE_SYSTICK	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define FREERTOS_USE_SYSTICK /;"	macro	line:42
+configTICK_SOURCE	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configTICK_SOURCE /;"	macro	line:56
+configUSE_PREEMPTION	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_PREEMPTION /;"	macro	line:58
+configUSE_PORT_OPTIMISED_TASK_SELECTION	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_PORT_OPTIMISED_TASK_SELECTION /;"	macro	line:59
+configUSE_TICKLESS_IDLE	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_TICKLESS_IDLE /;"	macro	line:60
+configUSE_TICKLESS_IDLE_SIMPLE_DEBUG	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_TICKLESS_IDLE_SIMPLE_DEBUG /;"	macro	line:61
+configCPU_CLOCK_HZ	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configCPU_CLOCK_HZ /;"	macro	line:62
+configTICK_RATE_HZ	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configTICK_RATE_HZ /;"	macro	line:63
+configMAX_PRIORITIES	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configMAX_PRIORITIES /;"	macro	line:64
+configMINIMAL_STACK_SIZE	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configMINIMAL_STACK_SIZE /;"	macro	line:65
+configTOTAL_HEAP_SIZE	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configTOTAL_HEAP_SIZE /;"	macro	line:66
+configMAX_TASK_NAME_LEN	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configMAX_TASK_NAME_LEN /;"	macro	line:67
+configUSE_16_BIT_TICKS	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_16_BIT_TICKS /;"	macro	line:68
+configIDLE_SHOULD_YIELD	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configIDLE_SHOULD_YIELD /;"	macro	line:69
+configUSE_MUTEXES	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_MUTEXES /;"	macro	line:70
+configUSE_RECURSIVE_MUTEXES	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_RECURSIVE_MUTEXES /;"	macro	line:71
+configUSE_COUNTING_SEMAPHORES	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_COUNTING_SEMAPHORES /;"	macro	line:72
+configUSE_ALTERNATIVE_API	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_ALTERNATIVE_API /;"	macro	line:73
+configQUEUE_REGISTRY_SIZE	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configQUEUE_REGISTRY_SIZE /;"	macro	line:74
+configUSE_QUEUE_SETS	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_QUEUE_SETS /;"	macro	line:75
+configUSE_TIME_SLICING	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_TIME_SLICING /;"	macro	line:76
+configUSE_NEWLIB_REENTRANT	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_NEWLIB_REENTRANT /;"	macro	line:77
+configENABLE_BACKWARD_COMPATIBILITY	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configENABLE_BACKWARD_COMPATIBILITY /;"	macro	line:78
+configUSE_IDLE_HOOK	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_IDLE_HOOK /;"	macro	line:81
+configUSE_TICK_HOOK	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_TICK_HOOK /;"	macro	line:82
+configCHECK_FOR_STACK_OVERFLOW	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configCHECK_FOR_STACK_OVERFLOW /;"	macro	line:83
+configUSE_MALLOC_FAILED_HOOK	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_MALLOC_FAILED_HOOK /;"	macro	line:84
+configGENERATE_RUN_TIME_STATS	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configGENERATE_RUN_TIME_STATS /;"	macro	line:87
+configUSE_TRACE_FACILITY	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_TRACE_FACILITY /;"	macro	line:88
+configUSE_STATS_FORMATTING_FUNCTIONS	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_STATS_FORMATTING_FUNCTIONS /;"	macro	line:89
+configUSE_CO_ROUTINES	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_CO_ROUTINES /;"	macro	line:92
+configMAX_CO_ROUTINE_PRIORITIES	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configMAX_CO_ROUTINE_PRIORITIES /;"	macro	line:93
+configUSE_TIMERS	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_TIMERS /;"	macro	line:96
+configTIMER_TASK_PRIORITY	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configTIMER_TASK_PRIORITY /;"	macro	line:97
+configTIMER_QUEUE_LENGTH	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configTIMER_QUEUE_LENGTH /;"	macro	line:98
+configTIMER_TASK_STACK_DEPTH	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configTIMER_TASK_STACK_DEPTH /;"	macro	line:99
+configEXPECTED_IDLE_TIME_BEFORE_SLEEP	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configEXPECTED_IDLE_TIME_BEFORE_SLEEP /;"	macro	line:102
+configASSERT	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configASSERT(/;"	macro	line:109
+configINCLUDE_APPLICATION_DEFINED_PRIVILEGED_FUNCTIONS	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configINCLUDE_APPLICATION_DEFINED_PRIVILEGED_FUNCTIONS /;"	macro	line:113
+INCLUDE_vTaskPrioritySet	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_vTaskPrioritySet /;"	macro	line:116
+INCLUDE_uxTaskPriorityGet	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_uxTaskPriorityGet /;"	macro	line:117
+INCLUDE_vTaskDelete	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_vTaskDelete /;"	macro	line:118
+INCLUDE_vTaskSuspend	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_vTaskSuspend /;"	macro	line:119
+INCLUDE_xResumeFromISR	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_xResumeFromISR /;"	macro	line:120
+INCLUDE_vTaskDelayUntil	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_vTaskDelayUntil /;"	macro	line:121
+INCLUDE_vTaskDelay	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_vTaskDelay /;"	macro	line:122
+INCLUDE_xTaskGetSchedulerState	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_xTaskGetSchedulerState /;"	macro	line:123
+INCLUDE_xTaskGetCurrentTaskHandle	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_xTaskGetCurrentTaskHandle /;"	macro	line:124
+INCLUDE_uxTaskGetStackHighWaterMark	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_uxTaskGetStackHighWaterMark /;"	macro	line:125
+INCLUDE_xTaskGetIdleTaskHandle	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_xTaskGetIdleTaskHandle /;"	macro	line:126
+INCLUDE_xTimerGetTimerDaemonTaskHandle	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_xTimerGetTimerDaemonTaskHandle /;"	macro	line:127
+INCLUDE_pcTaskGetTaskName	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_pcTaskGetTaskName /;"	macro	line:128
+INCLUDE_eTaskGetState	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_eTaskGetState /;"	macro	line:129
+INCLUDE_xEventGroupSetBitFromISR	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_xEventGroupSetBitFromISR /;"	macro	line:130
+INCLUDE_xTimerPendFunctionCall	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define INCLUDE_xTimerPendFunctionCall /;"	macro	line:131
+configLIBRARY_LOWEST_INTERRUPT_PRIORITY	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configLIBRARY_LOWEST_INTERRUPT_PRIORITY /;"	macro	line:135
+configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY /;"	macro	line:141
+configKERNEL_INTERRUPT_PRIORITY	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configKERNEL_INTERRUPT_PRIORITY /;"	macro	line:146
+configMAX_SYSCALL_INTERRUPT_PRIORITY	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configMAX_SYSCALL_INTERRUPT_PRIORITY /;"	macro	line:149
+vPortSVCHandler	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define vPortSVCHandler /;"	macro	line:154
+xPortPendSVHandler	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define xPortPendSVHandler /;"	macro	line:155
+xPortSysTickHandler	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^    #define xPortSysTickHandler /;"	macro	line:165
+configSYSTICK_CLOCK_HZ	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^    #define configSYSTICK_CLOCK_HZ /;"	macro	line:167
+xPortSysTickHandler	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^    #define xPortSysTickHandler /;"	macro	line:168
+configPRIO_BITS	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^        #define configPRIO_BITS /;"	macro	line:182
+configUSE_DISABLE_TICK_AUTO_CORRECTION_DEBUG	/home/jan/Workspace/nordic_semi/nRF5_SDK_15.0.0_a53641a/modified/peripherals/blinky_freertos/config/FreeRTOSConfig.h	/^#define configUSE_DISABLE_TICK_AUTO_CORRECTION_DEBUG /;"	macro	line:205

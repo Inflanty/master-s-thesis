@@ -1,0 +1,48 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <BreakpointListItem trigger="" line="28" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../../main.c" useHWbreakpoint="false"/>
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
+ </FrameBufferWindow>
+ <Memory1/>
+ <Memory2/>
+ <Memory3/>
+ <Memory4/>
+ <Project>
+  <ProjectSessionItem path="RTOS_SysView_blinky_demo"/>
+  <ProjectSessionItem path="RTOS_SysView_blinky_demo;RTOS_SysView_blinky_demo"/>
+  <ProjectSessionItem path="RTOS_SysView_blinky_demo;RTOS_SysView_blinky_demo;Application"/>
+  <ProjectSessionItem path="RTOS_SysView_blinky_demo;RTOS_SysView_blinky_demo;Kernel Source"/>
+  <ProjectSessionItem path="RTOS_SysView_blinky_demo;RTOS_SysView_blinky_demo;NRF_SDK Source"/>
+  <ProjectSessionItem path="RTOS_SysView_blinky_demo;RTOS_SysView_blinky_demo;NRF_SDK Source;None"/>
+ </Project>
+ <Register1/>
+ <Register2/>
+ <Register3/>
+ <Register4/>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never"/>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="65" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../main.c" debugPath="../../../main.c" selected="1" top="48" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="444" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../external/FreeRTOS_v9/Source/tasks.c" debugPath="../../../../../../external/FreeRTOS_v9/Source/tasks.c" selected="0" top="429" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="112" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/mdk/ses_nRF_Startup.s" debugPath="../../../../../../modules/nrfx/mdk/ses_nRF_Startup.s" selected="0" top="96" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="RTOS_SysView_blinky_demo" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Release" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
+</session>
