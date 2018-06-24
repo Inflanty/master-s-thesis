@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "nrf_drv_clock.h": "c",
-        "bsp.h": "c",
-        "freertos.h": "c"
-    }
-}
