@@ -1,3 +1,9 @@
 #exclude examples and components content
 /nordic_semi/nRF5_SDK_15.0.0_a53641a/examples/*
 /nordic_semi/nRF5_SDK_15.0.0_a53641a/components/*
+
+#exclude all .d, .o, .elf, .hex files
+*.d
+*.o
+*.hex
+*.elf
