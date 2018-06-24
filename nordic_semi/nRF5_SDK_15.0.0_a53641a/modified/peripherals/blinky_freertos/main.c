@@ -60,62 +60,43 @@
 #include "sdk_errors.h"
 #include "app_error.h"
 
-#if LEDS_NUMBER <= 2
-#error "Board is not equipped with enough amount of LEDs"
-#endif
-
-#define TASK_DELAY        200           /**< Task delay. Delays a LED0 task for 200 ms */
-#define TIMER_PERIOD      1000          /**< Timer period. LED1 timer will expire after 1000 ms */
-
-TaskHandle_t    led_toggle_task_handle;   /**< Reference to LED0 toggling FreeRTOS task. */
-TimerHandle_t   led_toggle_timer_handle;  /**< Reference to LED1 toggling FreeRTOS timer. */
-TimerHandle_t   var_increment_handle;    
-uint8_t         *pointToVar;
+TimerHandle_t var_increment_handle;
+uint8_t *pointToVar;
 
 traceString channelRegister(int *data);
 
-/**@brief LED0 task entry function.
+/**@ TASK making circle LEDs
  *
- * @param[in] pvParameter   Pointer that will be used as the parameter for the task.
+ *
+ *  
 */
-    static void led_toggle_task_function(void *pvParameter)
+static void TVarIncremant(void *pvParameter)
 {
-    UNUSED_PARAMETER(pvParameter);
-    while (true)
+
+    for (;;)
     {
-        bsp_board_led_invert(BSP_BOARD_LED_0);
-
-        /* Delay a task for a given number of ticks */
-        vTaskDelay(TASK_DELAY);
-
-        /* Tasks must be implemented to never return... */
+        for (int LEDnumber = 0; LEDnumber < 4; LEDnumber++)
+        {
+            bsp_board_led_invert(LEDnumber);
+            vTaskDelay(50);
+            bsp_board_led_invert(LEDnumber);
+        }
     }
 }
-
-/**@brief The function to call when the LED1 FreeRTOS timer expires.
- *
- * @param[in] pvParameter   Pointer that will be used as the parameter for the timer.
- */
-static void led_toggle_timer_callback (void * pvParameter)
-{
-    UNUSED_PARAMETER(pvParameter);
-    bsp_board_led_invert(BSP_BOARD_LED_1);
-}
-
-/**@ 
+/**@ TASK Increment *pointToVar
  *
  * 
  *  
 */
-static void var_inc_task_function (void * pvParameter)
+static void TVarIncremant(void *pvParameter)
 {
     *pointToVar = 0;
-    traceString notUsed = channelRegister( pointToVar );
+    traceString notUsed = channelRegister(pointToVar);
+    for (;;)
     {
-        vTaskDelay( 500 );
+        vTaskDelay(500);
         *pointToVar += 1;
-
-        if ( pointToVar > 10 )
+        if (pointToVar > 10)
         {
             *pointToVar = 0;
         }
@@ -133,14 +114,17 @@ traceString channelRegister(int *data)
     traceString myChannel = xTraceRegisterString("VAR 1");
 
     /* Store a user event with format string and data arg */
-    vTracePrintF( myChannel, "Variable 1 : %u", *data );
+    vTracePrintF(myChannel, "Variable 1 : %u", *data);
 
     /* Return the channel string */
     return myChannel;
 }
-
-    int
-    main(void)
+/**@  MAIN
+ * 
+ * 
+ *
+*/
+int main(void)
 {
     ret_code_t err_code;
 
@@ -154,18 +138,14 @@ traceString channelRegister(int *data)
     /* Init and start trcing */
     vTraceEnable(TRC_START);
 
-    /* Create task for LED0 blinking with priority set to 2 */
-    UNUSED_VARIABLE(xTaskCreate(led_toggle_task_function, "LED0", configMINIMAL_STACK_SIZE + 200, NULL, 2, &led_toggle_task_handle));
-
-    /* Start timer for LED1 blinking */
-    led_toggle_timer_handle = xTimerCreate( "LED1", TIMER_PERIOD, pdTRUE, NULL, led_toggle_timer_callback);
-    UNUSED_VARIABLE(xTimerStart(led_toggle_timer_handle, 0));
-
     /* Activate deep sleep mode */
     //SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
 
     /* Variable incrementing task start */
-    xTaskCreate(var_inc_task_function, "Var ++", configMINIMAL_STACK_SIZE + 200, NULL, 2, &var_increment_handle);
+    xTaskCreate(TVarIncremant, "Var ++", configMINIMAL_STACK_SIZE + 200, NULL, 2, &var_increment_handle);
+
+    /* Start task for LEDS circle */
+    xTaskCreate(TLedCircle, "LED Circle", configMINIMAL_STACK_SIZE + 200, NULL, 5, NULL);
 
     /* Start FreeRTOS scheduler. */
     vTaskStartScheduler();
