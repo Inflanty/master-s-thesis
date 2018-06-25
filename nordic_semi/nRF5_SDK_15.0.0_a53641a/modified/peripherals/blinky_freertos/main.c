@@ -70,16 +70,17 @@ traceString channelRegister(int *data);
  *
  *  
 */
-static void TVarIncremant(void *pvParameter)
+static void TLedCircle(void *pvParameter)
 {
 
     for (;;)
     {
-        for (int LEDnumber = 0; LEDnumber < 4; LEDnumber++)
+        for (uint32_t LEDnumber = 0; LEDnumber < 4; LEDnumber++)
         {
             bsp_board_led_invert(LEDnumber);
-            vTaskDelay(50);
+            vTaskDelay(99);
             bsp_board_led_invert(LEDnumber);
+            vTaskDelay(3);
         }
     }
 }
@@ -146,7 +147,7 @@ int main(void)
 
     /* Start task for LEDS circle */
     xTaskCreate(TLedCircle, "LED Circle", configMINIMAL_STACK_SIZE + 200, NULL, 5, NULL);
-
+    
     /* Start FreeRTOS scheduler. */
     vTaskStartScheduler();
 
@@ -156,7 +157,3 @@ int main(void)
          * in vTaskStartScheduler function. */
     }
 }
-
-/**
- *@}
- **/
