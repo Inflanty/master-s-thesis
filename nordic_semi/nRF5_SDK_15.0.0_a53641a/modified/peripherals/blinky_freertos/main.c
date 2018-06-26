@@ -72,7 +72,6 @@ traceString channelRegister(int *data);
 */
 static void TLedCircle(void *pvParameter)
 {
-
     for (;;)
     {
         for (uint32_t LEDnumber = 0; LEDnumber < 4; LEDnumber++)
@@ -91,15 +90,22 @@ static void TLedCircle(void *pvParameter)
 */
 static void TVarIncremant(void *pvParameter)
 {
-    *pointToVar = 0;
-    traceString notUsed = channelRegister(pointToVar);
+    /* Init variable */
+    int someVariable = 0;
+
+    /* Register a event */
+    traceString myChannel = xTraceRegisterString("VAR 1");
+
+    /* Store a user event with format string and data arg */
+    vTracePrintF(myChannel, "Variable 1 : %u", *data);
+
     for (;;)
     {
-        vTaskDelay(500);
-        *pointToVar += 1;
-        if (pointToVar > 10)
+        vTaskDelay(10);
+        someVariable += 1;
+        if (someVariable > 123)
         {
-            *pointToVar = 0;
+            someVariable = 0;
         }
     }
 }
