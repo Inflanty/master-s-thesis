@@ -60,10 +60,6 @@
 #include "sdk_errors.h"
 #include "app_error.h"
 
-TimerHandle_t var_increment_handle;
-uint8_t *pointToVar;
-
-traceString channelRegister(int *data);
 
 /**@ TASK making circle LEDs
  *
@@ -93,39 +89,24 @@ static void TVarIncremant(void *pvParameter)
     /* Init variable */
     int someVariable = 0;
 
-    /* Register a event */
-    traceString myChannel = xTraceRegisterString("VAR 1");
+    /* Register a User Event channel name */
+    traceString myChannel = xTraceRegisterString("ADC 1");
 
-    /* Store a user event with format string and data arg */
-    vTracePrintF(myChannel, "Variable 1 : %u", *data);
+    /* Store a User Event, with format string and data argument(s) */
+    vTracePrintF(myChannel, "ADC 1: %lf volts", someVariable);
 
     for (;;)
     {
-        vTaskDelay(10);
+        vTaskDelay(100);
         someVariable += 1;
-        if (someVariable > 123)
-        {
-            someVariable = 0;
-        }
+        /* Store a User Event, with format string and data argument(s) */
+        vTracePrintF(myChannel, "ADC 1: %lf volts", someVariable);
+        
+        /* If greather than 123 save zero vlue */
+        if (someVariable > 123) someVariable = 0;
     }
 }
 
-/**@ Function for variable register and saving
- * 
- * 
- *
-*/
-traceString channelRegister(int *data)
-{
-    /* Register a event */
-    traceString myChannel = xTraceRegisterString("VAR 1");
-
-    /* Store a user event with format string and data arg */
-    vTracePrintF(myChannel, "Variable 1 : %u", *data);
-
-    /* Return the channel string */
-    return myChannel;
-}
 /**@  MAIN
  * 
  * 
@@ -149,10 +130,13 @@ int main(void)
     //SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
 
     /* Variable incrementing task start */
-    xTaskCreate(TVarIncremant, "Var ++", configMINIMAL_STACK_SIZE + 200, NULL, 2, &var_increment_handle);
+    xTaskCreate(TVarIncremant, "Increment Testing", configMINIMAL_STACK_SIZE + 200, NULL, 2, NULL);
+
+    /* Make LED1 on */
+    //bsp_board_led_invert(1);
 
     /* Start task for LEDS circle */
-    xTaskCreate(TLedCircle, "LED Circle", configMINIMAL_STACK_SIZE + 200, NULL, 5, NULL);
+    //xTaskCreate(TLedCircle, "LED Circle", configMINIMAL_STACK_SIZE + 200, NULL, 5, NULL);
     
     /* Start FreeRTOS scheduler. */
     vTaskStartScheduler();
