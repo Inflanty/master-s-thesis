@@ -102,4 +102,6 @@ SEGGER SystemView:
 	
 	makeRole ( serverInit, configData );
 
+	standby mode and FreeRTOS
+
 
