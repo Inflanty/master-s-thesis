@@ -64,3 +64,44 @@ SEGGER SystemView:
 	-run multitasking
 
 	Probably, you need to modify SEGGER_SYSVIEW_Conf.h file, and run ISR with SEGGER_SYSVIEW_Start/Stop <- to check.
+
+
+	**************************
+
+	how to call server initialize ?
+	
+	optionalParameters - structure with parameters.
+	struct optionalParameters{
+		service_type_t 					serviceTable[servicesAmount];
+		...
+	}; 
+	
+	makeRole ( void ( *functionInit )( void ), optionalParameters);
+	
+	makeRole ( ... )
+	{
+
+		callback run with optionalParameters
+		
+		return something ?
+
+	}
+
+	void serverInit ( void )
+	{
+		/* Configure server */
+
+		/* Apply the services */
+
+		/* Apply the descriptions */
+
+		/* want to return something ? */
+	}
+
+	struct optionalParameters configData = {.serviceTavle[0] = xxx, ...};
+	
+	makeRole ( serverInit, configData );
+
+	standby mode and FreeRTOS
+
+

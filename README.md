@@ -8,7 +8,7 @@ The project is composed with a three parts:
 * ANALYSIS
 * AQUISITION and CONTROL
 * PROCESS
-![](doc/img/martersthesis.png)
+![](doc/img/mastersthesis.png)
 
 ## Main Board
 ### HW
@@ -20,6 +20,9 @@ Main Booard is provided by nRF52832 (Nordic Semiconductor). The board is respons
 Main Board SW Stack  
 ![](doc/img/layers.png)
 On main board instalated FreeRTOS stack, all tasks are controlled by scheluder. Only small amount of interrupts are permitted - for control clarity. As we can see from the picture - there is small buffer between Application and lower layers. Mentioned buffer is responsible for taking informations from all controller task and streaming those infos via serial interface to J-Link (the Information will be stored and presented on desktop by tracealyzer).
+
+#### Program Design
+The Application Core provided by FreRTOS, each task definition are included in header files, in specific folder for code clear. Bluetooth functionality should by implemented in library part too. Application code have to be located in the main.c - application layer uses the lower levels libraries. So for example, we want to initialize BLE server - in this case we must call the function with server initial arguments.
 
 #### Percepio Tracealyzer
 ![](doc/img/tracealyzer.png)
