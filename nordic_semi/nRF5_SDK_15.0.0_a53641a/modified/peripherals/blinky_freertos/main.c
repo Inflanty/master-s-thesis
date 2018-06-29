@@ -136,7 +136,7 @@ int main(void)
     //bsp_board_led_invert(1);
 
     /* Start task for LEDS circle */
-    //xTaskCreate(TLedCircle, "LED Circle", configMINIMAL_STACK_SIZE + 200, NULL, 5, NULL);
+    xTaskCreate(TLedCircle, "LED Circle", configMINIMAL_STACK_SIZE + 200, NULL, 5, NULL);
     
     /* Start FreeRTOS scheduler. */
     vTaskStartScheduler();

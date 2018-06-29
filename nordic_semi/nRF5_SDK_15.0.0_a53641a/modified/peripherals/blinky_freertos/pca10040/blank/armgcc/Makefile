@@ -40,6 +40,11 @@ SRC_FILES += \
   $(SDK_ROOT)/components/libraries/bsp/bsp.c \
   $(PROJ_DIR)/main.c \
   $(SDK_ROOT)/modules/nrfx/mdk/system_nrf52.c \
+  $(SDK_ROOT)/external/TraceRecorder/trcKernelPort.c \
+  $(SDK_ROOT)/external/TraceRecorder/trcSnapshotRecorder.c \
+  $(SDK_ROOT)/external/TraceRecorder/trcStreamingRecorder.c \
+  $(SDK_ROOT)/external/TraceRecorder/streamports/Jlink_RTT/SEGGER_RTT.c \
+  $(SDK_ROOT)/external/TraceRecorder/streamports/Jlink_RTT/trcStreamingPort.c \
 
 # Include folders common to all targets
 INC_FOLDERS += \
@@ -70,6 +75,8 @@ INC_FOLDERS += \
   $(SDK_ROOT)/components/libraries/experimental_memobj \
   $(SDK_ROOT)/external/freertos/portable/GCC/nrf52 \
   $(SDK_ROOT)/modules/nrfx/drivers/include \
+  $(SDK_ROOT)/external/TraceRecorder/include \
+  $(SDK_ROOT)/external/TraceRecorder/streamports/Jlink_RTT/include \
 
 # Libraries common to all targets
 LIB_FILES += \

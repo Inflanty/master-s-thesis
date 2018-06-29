@@ -3,8 +3,12 @@
 /nordic_semi/nRF5_SDK_15.0.0_a53641a/components/*
 /.vscode
 
-#exclude all .d, .o, .elf, .hex files
+#exclude all .d, .o, .elf, .hex and other files
 *.d
 *.o
 *.hex
 *.elf
+*.bin
+*.map
+*.in
+*.out
