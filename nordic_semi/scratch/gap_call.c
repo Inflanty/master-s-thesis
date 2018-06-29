@@ -111,9 +111,11 @@ ble_response ble_broadcasterStart()
 }
 ble_response ble_observerInit()
 {
-	esp_ble_scan_params_t scan_params = {.scan_type = BLE_SCAN_TYPE_PASSIVE,
-		.own_addr_type = BLE_ADDR_TYPE_PUBLIC, .scan_filter_policy = BLE_SCAN_FILTER_ALLOW_ALL,
-		.scan_interval = scanInterval, .scan_window = scanWindow,
+	esp_ble_scan_params_t scan_params = {	.scan_type = BLE_SCAN_TYPE_PASSIVE,
+																				.own_addr_type = BLE_ADDR_TYPE_PUBLIC,
+																				.scan_filter_policy = BLE_SCAN_FILTER_ALLOW_ALL,
+																				.scan_interval = scanInterval, 
+																				.scan_window = scanWindow,
 	}
 
 	if(esp_ble_gap_set_scan_params(scan_params) == ESP_OK)
