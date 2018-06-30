@@ -79,33 +79,7 @@ static void TLedCircle(void *pvParameter)
         }
     }
 }
-/**@ TASK Increment *pointToVar
- *
- * 
- *  
-*/
-static void TVarIncremant(void *pvParameter)
-{
-    /* Init variable */
-    int someVariable = 0;
 
-    /* Register a User Event channel name */
-    traceString myChannel = xTraceRegisterString("ADC 1");
-
-    /* Store a User Event, with format string and data argument(s) */
-    vTracePrintF(myChannel, "ADC 1: %lf volts", someVariable);
-
-    for (;;)
-    {
-        vTaskDelay(100);
-        someVariable += 1;
-        /* Store a User Event, with format string and data argument(s) */
-        vTracePrintF(myChannel, "ADC 1: %lf volts", someVariable);
-        
-        /* If greather than 123 save zero vlue */
-        if (someVariable > 123) someVariable = 0;
-    }
-}
 
 /**@  MAIN
  * 
@@ -130,14 +104,15 @@ int main(void)
     //SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
 
     /* Variable incrementing task start */
-    xTaskCreate(TVarIncremant, "Increment Testing", configMINIMAL_STACK_SIZE + 200, NULL, 2, NULL);
+    //xTaskCreate(TVarIncremant, "Increment Testing", configMINIMAL_STACK_SIZE + 200, NULL, 2, NULL);
 
     /* Make LED1 on */
     //bsp_board_led_invert(1);
 
     /* Start task for LEDS circle */
     xTaskCreate(TLedCircle, "LED Circle", configMINIMAL_STACK_SIZE + 200, NULL, 5, NULL);
-    
+    bsp_board_led_invert(4);
+
     /* Start FreeRTOS scheduler. */
     vTaskStartScheduler();
 

@@ -1,17 +1,64 @@
-@echo off
-@echo w4 4001e504 2 > eraseall.jlink
-@echo w4 4001e50c 1 >> eraseall.jlink
-@echo w4 4001e514 1 >> eraseall.jlink
-@echo sleep 100 >> eraseall.jlink
-@echo r >> eraseall.jlink
-@echo exit >> eraseall.jlink
-jlink -device nRF52832_xxAA -speed 4000 -commanderscript eraseall.jlink
+#!/bin/sh
+echo "
+███╗   ██╗██████╗ ███████╗   ██╗██████╗ ██████╗  ██████╗  ██████╗     
+████╗  ██║██╔══██╗██╔════╝   ██║██╔══██╗██╔══██╗██╔═══██╗██╔════╝     
+██╔██╗ ██║██████╔╝█████╗     ██║██████╔╝██████╔╝██║   ██║██║  ███╗    
+██║╚██╗██║██╔══██╗██╔══╝██   ██║██╔═══╝ ██╔══██╗██║   ██║██║   ██║    
+██║ ╚████║██║  ██║██║   ╚█████╔╝██║     ██║  ██║╚██████╔╝╚██████╔╝    
+╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝    ╚════╝ ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚═════╝     
+                                                                      
+███████╗██╗      █████╗ ███████╗██╗  ██╗██╗███╗   ██╗ ██████╗         
+██╔════╝██║     ██╔══██╗██╔════╝██║  ██║██║████╗  ██║██╔════╝         
+█████╗  ██║     ███████║███████╗███████║██║██╔██╗ ██║██║  ███╗        
+██╔══╝  ██║     ██╔══██║╚════██║██╔══██║██║██║╚██╗██║██║   ██║        
+██║     ███████╗██║  ██║███████║██║  ██║██║██║ ╚████║╚██████╔╝        
+╚═╝     ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝
+"
 
-@echo w4 4001e504 1 > nrf51_program_sd.jlink
-@echo loadbin s110_softdevice.bin 0 >> nrf51_program_sd.jlink
-@echo r >> nrf51_program_sd.jlink
-@echo g >> nrf51_program_sd.jlink
-@echo exit >> nrf51_program_sd.jlink
-jlink -device nRF52832_xxAA -speed 4000 -commanderscript nrf51_program_sd.jlink
+echo "nRF52832_xxaa flashing"
+echo "family : NRF52"
+echo "clockspeed : 4000"
+echo "checking for file ..."
 
-# TODO: Write complete shell 
+FILE_PATH="_build/nrf52832_xxaa.hex"
+SOFTDEVICE_FILE_PATH="../../../../../../../s132_nrf52_4.0.5/s132_nrf52_4.0.5_softdevice.hex"
+
+if [ -s $FILE_PATH ]
+then  
+  echo "Find Project's .hex file !"
+  ERRORCODE=0
+else
+  echo "ERROR: No Project's .hex file !"
+  ERRORCODE=1
+  exit
+fi
+
+if [ -s $SOFTDEVICE_FILE_PATH ]
+then
+  echo "Find SoftDevice .hex file !"
+  ERRORCODE=0
+else
+  echo "ERROR: No SoftDevice .hex file !"
+  ERRORCODE=1
+  exit
+fi
+
+if [ $ERRORCODE -eq 0 ]
+then
+  echo "SUCCESS: All .hex files found, MERGEING ..."
+  mergehex -m $SOFTDEVICE_FILE_PATH $FILE_PATH -o SoC.hex
+elif [ $ERRORCODE -eq 1 ]
+then  
+  echo "ERROR: EXIT ..."
+elif [ $ERRORCODE -gt 1 ]
+then
+  echo "ERROR: $ERRORCODE"
+fi
+
+if [ -s SoC.hex ]
+then
+  echo "SUCCESS: File _build/nrf52832_xxaa.hex exist, FLASHING ..."
+  #nrfjprog --family NRF52 --clockspeed 4000 --program $FILE_PATH --chiperase
+else
+  echo "FAIL !"
+fi
