@@ -101,7 +101,7 @@ int main(void)
     vTraceEnable(TRC_START);
 
     /* Activate deep sleep mode */
-    //SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
+    SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
 
     /* Variable incrementing task start */
     //xTaskCreate(TVarIncremant, "Increment Testing", configMINIMAL_STACK_SIZE + 200, NULL, 2, NULL);
@@ -111,7 +111,6 @@ int main(void)
 
     /* Start task for LEDS circle */
     xTaskCreate(TLedCircle, "LED Circle", configMINIMAL_STACK_SIZE + 200, NULL, 5, NULL);
-    bsp_board_led_invert(4);
 
     /* Start FreeRTOS scheduler. */
     vTaskStartScheduler();
