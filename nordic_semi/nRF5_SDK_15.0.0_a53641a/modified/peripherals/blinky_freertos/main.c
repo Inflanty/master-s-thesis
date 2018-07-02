@@ -61,13 +61,16 @@
 #include "sdk_errors.h"
 #include "app_error.h"
 
+#include "extern/exTask.h"
 /* FreeRTOS Timer handler */
 TimerHandle_t   hLedTimer;
 TaskHandle_t    hUnnamedTask;
 QueueHandle_t   hQueue;
 
-unsigned long ulVar = 10UL;
+unsigned long   ulVar = 10UL;
+unsigned long   ulVarReceived = 10UL;
 int             taskCounter;
+traceString     uLog;
 
 
 /**@ TASK   
@@ -75,15 +78,20 @@ int             taskCounter;
  *
  *  
 */
-static void TLedCircle( traceString uLog )
+void TLedCircle( void * pvParameter )
 {
-    //UNUSED_PARAMETER ( pvParameter );
-    bsp_board_led_invert ( 1 );
-    vTracePrint(uLog, "Hello from task 1 !");
+    UNUSED_PARAMETER ( pvParameter );
+    vTracePrint( uLog, "Hello from task 1 !" );
 
     for (;;)
     {
-    
+        if ( hQueue != 0 )
+        {
+            if ( xQueueReceive ( hQueue,  &ulVarReceived, (TickType_t) 10 ) )
+            {
+                bsp_board_led_invert ( 1 );
+            }
+        }
     }
     vTaskDelete ( NULL );
 }
@@ -92,22 +100,22 @@ static void TLedCircle( traceString uLog )
  * 
  *
 */
-void vCallbackTimer( traceString uLog )
+void vCallbackTimer( void * pvParameter )
 {
-    //UNUSED_PARAMETER ( pvParameter );
+    UNUSED_PARAMETER ( pvParameter );
     bsp_board_led_invert ( 0 );
     taskCounter ++;
 
     if ( taskCounter == 10 )
     {
-        vTracePrint(uLog, "Now, I try to reseume task 1");
+        vTracePrint( uLog, "Now, I try to reseume task 1" );
         taskCounter = 0;
 
         if ( hQueue != 0 )
         {
           if ( xQueueSend ( hQueue, (void *) &ulVar, (TickType_t) 10 ) != pdPASS )
           {
-            vTracePrint(uLog, "Can't send the queue !");
+            vTracePrint( uLog, "Can't send the queue !" );
           }
         }
     }
@@ -133,22 +141,25 @@ int main(void)
     bsp_board_init(BSP_INIT_LEDS);
 
     /* Register channel */
-    traceString uLog = xTraceRegisterString("UserLog");
+    uLog = xTraceRegisterString("UserLog");
 
     /* Create a Queue */
     hQueue = xQueueCreate ( 10, sizeof( unsigned long ));  
 
     /* Init and start trcing */
-    vTraceEnable(TRC_START);
+    vTraceEnable( TRC_START );
 
     /* Activate deep sleep mode */
     SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
 
     /* Start task for LEDS circle */
-    xTaskCreate(TLedCircle, "LED Circle", 1024, uLog, tskIDLE_PRIORITY, &hUnnamedTask);
+    xTaskCreate ( TLedCircle, ( const char * ) "LED Circle", 1024, NULL, tskIDLE_PRIORITY, &hUnnamedTask );
+
+    /* Start task laocated inside include file */
+    xTaskCreate ( externalTask1, ( const char * ) "External Task", 256, NULL, tskIDLE_PRIORITY, &hExternTask1 );
 
     /* Software timer create */
-    hLedTimer = xTimerCreate ( "Led Timer", 100, pdTRUE, uLog, vCallbackTimer );
+    hLedTimer = xTimerCreate ( ( const char * ) "Led Timer", 100, pdTRUE, NULL, vCallbackTimer );
 
     /* Timer start */
     xTimerStart ( hLedTimer, 0 );
