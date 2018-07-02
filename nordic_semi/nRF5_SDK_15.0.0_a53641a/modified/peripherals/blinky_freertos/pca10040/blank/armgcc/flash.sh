@@ -70,7 +70,9 @@ if [ ! $MERGEIT -eq 1 ]; then
   FUNCTION_MergeFiles
   if [ -s SoC.hex ]; then
     echo "SUCCESS: File SoC.hex exist, FLASHING ..."
-    nrfjprog --family NRF52 --clockspeed 4000 --program SoC.hex --chiperase
+    nrfjprog --family NRF52 --clockspeed 4000 -e
+    nrfjprog --family NRF52 --clockspeed 4000 --program SoC.hex
+    nrfjprog --family NRF52 --clockspeed 4000 -r
   else
     echo "ERROR: No merged file ! Exiting..."
     exit
@@ -78,7 +80,9 @@ if [ ! $MERGEIT -eq 1 ]; then
 else
 	echo "No BLE files, merging skip"
   FUNCTION_FindProjectHex
-  nrfjprog --family NRF52 --clockspeed 4000 --program $FILE_PATH --chiperase
+  nrfjprog --family NRF52 --clockspeed 4000 -e
+  nrfjprog --family NRF52 --clockspeed 4000 --program $FILE_PATH
+  nrfjprog --family NRF52 --clockspeed 4000 -r
 fi
 
 
