@@ -75,6 +75,7 @@ static void TLedCircle( void *pvParameter )
 {
     UNUSED_PARAMETER ( pvParameter );
     bsp_board_led_invert ( 1 );
+    vTracePrint(uLog, "Hello from task 1 !");
     vTaskSuspend ( NULL );
 }
 /**@  Timer's callback function
@@ -90,6 +91,7 @@ void vCallbackTimer( void *pvParameter )
 
     if ( taskCounter == 100 )
     {
+        vTracePrint(uLog, "Now, I try to reseume task 1");
         vTaskResume ( hUnnamedTask );
         taskCounter = 0;
     }
@@ -113,6 +115,9 @@ int main(void)
 
     /* Configure LED-pins as outputs */
     bsp_board_init(BSP_INIT_LEDS);
+
+    /* Register channel */
+    traceString uLog = xTraceRegisterString("UserLog");
 
     /* Init and start trcing */
     vTraceEnable(TRC_START);
