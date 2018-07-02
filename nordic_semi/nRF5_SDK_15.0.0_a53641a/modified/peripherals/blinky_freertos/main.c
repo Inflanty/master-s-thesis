@@ -60,26 +60,40 @@
 #include "sdk_errors.h"
 #include "app_error.h"
 
+/* FreeRTOS Timer handler */
+TimerHandle_t   hLedTimer;
+TaskHandle_t    hUnnamedTask;
 
-/**@ TASK making circle LEDs
+int             taskCounter;
+
+/**@ TASK   
  *
  *
  *  
 */
-static void TLedCircle(void *pvParameter)
+static void TLedCircle( void *pvParameter )
 {
-    for (;;)
+    UNUSED_PARAMETER ( pvParameter );
+    bsp_board_led_invert ( 1 );
+    vTaskSuspend ( NULL );
+}
+/**@  Timer's callback function
+ * 
+ * 
+ *
+*/
+void vCallbackTimer( void *pvParameter )
+{
+    UNUSED_PARAMETER ( pvParameter );
+    bsp_board_led_invert ( 0 );
+    taskCounter ++;
+
+    if ( taskCounter == 100 )
     {
-        for (uint32_t LEDnumber = 0; LEDnumber < 4; LEDnumber++)
-        {
-            bsp_board_led_invert(LEDnumber);
-            vTaskDelay(99);
-            bsp_board_led_invert(LEDnumber);
-            vTaskDelay(3);
-        }
+        vTaskResume ( hUnnamedTask );
+        taskCounter = 0;
     }
 }
-
 
 /**@  MAIN
  * 
@@ -94,6 +108,9 @@ int main(void)
     err_code = nrf_drv_clock_init();
     APP_ERROR_CHECK(err_code);
 
+    /* Set taskCounter to 0 */
+    taskCounter = 0;
+
     /* Configure LED-pins as outputs */
     bsp_board_init(BSP_INIT_LEDS);
 
@@ -103,14 +120,14 @@ int main(void)
     /* Activate deep sleep mode */
     SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
 
-    /* Variable incrementing task start */
-    //xTaskCreate(TVarIncremant, "Increment Testing", configMINIMAL_STACK_SIZE + 200, NULL, 2, NULL);
-
-    /* Make LED1 on */
-    //bsp_board_led_invert(1);
-
     /* Start task for LEDS circle */
-    xTaskCreate(TLedCircle, "LED Circle", configMINIMAL_STACK_SIZE + 200, NULL, 5, NULL);
+    xTaskCreate(TLedCircle, "LED Circle", configMINIMAL_STACK_SIZE + 200, NULL, tskIDLE_PRIORITY, &hUnnamedTask);
+
+    /* Software timer create */
+    hLedTimer = xTimerCreate ( "Led Timer", 100, pdTRUE, NULL, vCallbackTimer );
+
+    /* Timer start */
+    xTimerStart ( hLedTimer, 0 );
 
     /* Start FreeRTOS scheduler. */
     vTaskStartScheduler();
