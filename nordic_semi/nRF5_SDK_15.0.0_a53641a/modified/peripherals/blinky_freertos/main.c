@@ -146,23 +146,26 @@ int main(void)
     /* Create a Queue */
     hQueue = xQueueCreate ( 10, sizeof( unsigned long ));  
 
-    /* Init and start trcing */
-    vTraceEnable( TRC_START );
-
     /* Activate deep sleep mode */
-    SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
+    //SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
 
     /* Start task for LEDS circle */
     xTaskCreate ( TLedCircle, ( const char * ) "LED Circle", 1024, NULL, tskIDLE_PRIORITY, &hUnnamedTask );
 
     /* Start task laocated inside include file */
-    xTaskCreate ( externalTask1, ( const char * ) "External Task", 256, NULL, tskIDLE_PRIORITY, &hExternTask1 );
+    xTaskCreate ( externalTask1, ( const char * ) "External Task 1", 1024, NULL, tskIDLE_PRIORITY, &hExternTask1 );
+
+    /* Start task laocated inside include file */
+    xTaskCreate ( externalTask2, ( const char * ) "External Task 2", 1024, NULL, tskIDLE_PRIORITY, &hExternTask2 );
 
     /* Software timer create */
     hLedTimer = xTimerCreate ( ( const char * ) "Led Timer", 100, pdTRUE, NULL, vCallbackTimer );
 
     /* Timer start */
     xTimerStart ( hLedTimer, 0 );
+
+    /* Init and start trcing */
+    vTraceEnable( TRC_START );
 
     /* Start FreeRTOS scheduler. */
     vTaskStartScheduler();

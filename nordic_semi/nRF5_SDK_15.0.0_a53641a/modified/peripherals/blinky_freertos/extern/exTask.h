@@ -21,15 +21,15 @@ struct button {
 /*
 *@ External 1 Queue
 */
-QueueHandle_t       hExternQueue1;
+extern QueueHandle_t       hExternQueue1;
 /*
 *@ External 1 Handler
 */
-TaskHandle_t        hExternTask1;
+extern TaskHandle_t        hExternTask1;
 /*
 *@ External 2 Handler
 */
-TaskHandle_t        hExternTask2;
+extern TaskHandle_t        hExternTask2;
 
 /*
 *@ External task 1 definition
