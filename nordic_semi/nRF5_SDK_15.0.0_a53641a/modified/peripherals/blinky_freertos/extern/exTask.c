@@ -22,6 +22,8 @@ void externalTask1 ( void * pvParameter )
   UNUSED_PARAMETER ( pvParameter );
   uint8_t * buttonNo = 0;
   hExternQueue1 = xQueueCreate( 0, sizeof( unsigned long ) );
+  vTraceSetQueueName( (void*) &hExternQueue1, (const char*) "Button Queue");
+
   for (;;)
   {
     for ( int buttonNumber = 13; buttonNumber <= 16; buttonNumber ++)
