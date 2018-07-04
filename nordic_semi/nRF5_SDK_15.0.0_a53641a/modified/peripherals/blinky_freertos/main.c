@@ -48,6 +48,11 @@
  *
  */
 
+/*
+TODO: Check variable from task 1 in tracealyzer !
+
+*/
+
 #include <stdbool.h>
 #include <stdint.h>
 
@@ -82,6 +87,8 @@ void TLedCircle( void * pvParameter )
 {
     UNUSED_PARAMETER ( pvParameter );
     vTracePrint( uLog, "Hello from task 1 !" );
+    traceString variableRegister = xTraceRegisterString("Variable: %d");
+    int variableForTracing = 0;
 
     for (;;)
     {
@@ -90,6 +97,8 @@ void TLedCircle( void * pvParameter )
             if ( xQueueReceive ( hQueue,  &ulVarReceived, (TickType_t) 10 ) )
             {
                 bsp_board_led_invert ( 1 );
+                variableForTracing ++;
+                vTracePrintF(variableRegister, "Value: %d", variableForTracing);
             }
         }
     }
