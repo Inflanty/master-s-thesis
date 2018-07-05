@@ -73,6 +73,7 @@ int             taskCounter;
 traceString     uLog;
 
 
+
 /**@ TASK   
  *
  *
@@ -156,7 +157,7 @@ int main(void)
     xTaskCreate ( externalTask1, ( const char * ) "External Task 1", 1024, NULL, tskIDLE_PRIORITY, &hExternTask1 );
 
     /* Start task laocated inside include file */
-    xTaskCreate ( externalTask2, ( const char * ) "External Task 2", 1024, NULL, tskIDLE_PRIORITY, &hExternTask2 );
+    //xTaskCreate ( externalTask2, ( const char * ) "External Task 2", 1024, NULL, tskIDLE_PRIORITY, &hExternTask2 );
 
     /* Software timer create */
     hLedTimer = xTimerCreate ( ( const char * ) "Led Timer", 100, pdTRUE, NULL, vCallbackTimer );

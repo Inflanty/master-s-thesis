@@ -44,9 +44,9 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="89" y="152" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../main.c" debugPath="../../../main.c" selected="0" top="128" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="29" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../extern/exTask.c" debugPath="../../../extern/exTask.c" selected="1" top="5" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="13" y="10" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../extern/exTask.h" debugPath="../../../extern/exTask.h" selected="0" top="9" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="159" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../main.c" debugPath="../../../main.c" selected="0" top="128" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="52" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../extern/exTask.c" debugPath="../../../extern/exTask.c" selected="1" top="54" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="10" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../extern/exTask.h" debugPath="../../../extern/exTask.h" selected="0" top="9" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="59" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../components/boards/boards.h" debugPath="../../../../../../components/boards/boards.h" selected="0" top="32" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../components/boards/pca10040.h" debugPath="../../../../../../components/boards/pca10040.h" selected="0" top="32" codecName="Default"/>
  </Files>

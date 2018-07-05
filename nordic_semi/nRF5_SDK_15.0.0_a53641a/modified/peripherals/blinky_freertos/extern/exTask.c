@@ -20,28 +20,36 @@ TaskHandle_t        hExternTask2;
 void externalTask1 ( void * pvParameter )
 {
   UNUSED_PARAMETER ( pvParameter );
-  uint8_t * buttonNo = 0;
+  UBaseType_t uxHighWaterMark;
+  unsigned int controlValue = 0;
   hExternQueue1 = xQueueCreate( 0, sizeof( unsigned long ) );
+
+  /* Register log channel */
+  traceString waterMark = xTraceRegisterString("Water Mark");
+  traceString controlMark = xTraceRegisterString("Control");
+
+  /* Register the queue */
   vTraceSetQueueName( (void*) &hExternQueue1, (const char*) "Button Queue");
 
+  /*  */
+  uxHighWaterMark = uxTaskGetStackHighWaterMark( NULL );
+
+  /* Send wm value */
+  vTracePrintF(waterMark, "Calculated Water Mark %u", uxHighWaterMark);
   for (;;)
   {
     for ( int buttonNumber = 13; buttonNumber <= 16; buttonNumber ++)
     {
-      if ( !bsp_board_button_state_get( buttonNumber ) )
-      {/*
-        *buttonNo = buttonNumber;
-        if ( hExternQueue1 != 0 )
-        {
-          if ( xQueueSend ( hExternQueue1, (void *) buttonNo, (TickType_t) 10 ) != pdPASS )
-          {
-            //
-          }
-        }*/
-        bsp_board_led_invert ( buttonNumber + 4 );
-        while ( !bsp_board_button_state_get( buttonNumber ) ) { vTaskDelay ( 20 ); };
-      }
+      vTaskDelay( 100 );
+      controlValue += 1;
+      if ( controlValue > 10000 ) controlValue = 0;
     }
+    /*  */
+    uxHighWaterMark = uxTaskGetStackHighWaterMark( NULL );
+
+    /* Send wm value */
+    vTracePrintF(waterMark, "Calculated Water Mark %u", uxHighWaterMark );
+    vTracePrintF(controlMark, "Calculated Water Mark %u", controlValue);
   }
   vTaskDelete ( NULL );
 }
@@ -52,15 +60,16 @@ void externalTask1 ( void * pvParameter )
 void externalTask2 ( void * pvParameter )
 {
   UNUSED_PARAMETER ( pvParameter );
-  uint8_t * buttonNumber = 0;
+  int queueValue = 0;
   for (;;)
   {
     if ( hExternQueue1 != 0 )
     {
-      if ( xQueueReceive ( hExternQueue1, (void * ) buttonNumber,  (TickType_t) 0 ) )
+      if ( xQueueReceive ( hExternQueue1, (void * ) &queueValue,  (TickType_t) 0 ) != pdPASS )
       {
-        bsp_board_led_invert ( * buttonNumber );
+
       }
+      if ( queueValue != 0 && queueValue != 1 ) bsp_board_led_invert ( queueValue );
     }
   }
   vTaskDelete ( NULL );
