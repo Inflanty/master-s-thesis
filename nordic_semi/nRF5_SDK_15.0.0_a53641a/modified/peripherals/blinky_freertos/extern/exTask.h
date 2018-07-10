@@ -30,6 +30,18 @@ extern TaskHandle_t        hExternTask1;
 *@ External 2 Handler
 */
 extern TaskHandle_t        hExternTask2;
+/*
+*@ External 3 Handler
+*/
+extern TaskHandle_t        hExternTask3;
+/*
+*@ External 4 Handler
+*/
+extern TaskHandle_t        hExternTask4;
+/*
+*@ External handler form main
+*/
+extern TaskHandle_t        hUnnamedTask;
 
 /*
 *@ External task 1 definition
@@ -41,6 +53,16 @@ void externalTask1  ( void * pvParameter );
 *
 */
 void externalTask2  ( void * pvParameter );
+/*
+*@ External task 3 definition
+*
+*/
+void externalTask3 ( void * pvParameter );
+/*
+*@ External task 4 definition
+*
+*/
+void externalTask4 ( void * pvParameter );
 
 
 #endif

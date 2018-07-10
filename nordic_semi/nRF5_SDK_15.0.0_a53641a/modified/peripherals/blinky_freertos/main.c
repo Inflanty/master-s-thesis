@@ -1,30 +1,30 @@
 /**
  * Copyright (c) 2015 - 2018, Nordic Semiconductor ASA
- *
+ * 
  * All rights reserved.
- *
+ * 
  * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
- *
+ * 
  * 1. Redistributions of source code must retain the above copyright notice, this
  *    list of conditions and the following disclaimer.
- *
+ * 
  * 2. Redistributions in binary form, except as embedded into a Nordic
  *    Semiconductor ASA integrated circuit in a product or a software update for
  *    such product, must reproduce the above copyright notice, this list of
  *    conditions and the following disclaimer in the documentation and/or other
  *    materials provided with the distribution.
- *
+ * 
  * 3. Neither the name of Nordic Semiconductor ASA nor the names of its
  *    contributors may be used to endorse or promote products derived from this
  *    software without specific prior written permission.
- *
+ * 
  * 4. This software, with or without modification, must only be used with a
  *    Nordic Semiconductor ASA integrated circuit.
- *
+ * 
  * 5. Any software provided in binary form under this license must not be reverse
  *    engineered, decompiled, modified and/or disassembled.
- *
+ * 
  * THIS SOFTWARE IS PROVIDED BY NORDIC SEMICONDUCTOR ASA "AS IS" AND ANY EXPRESS
  * OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
  * OF MERCHANTABILITY, NONINFRINGEMENT, AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -35,7 +35,7 @@
  * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
  * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
+ * 
  */
 /** @file
  * @defgroup blinky_example_main main.c
@@ -48,94 +48,156 @@
  *
  */
 
-/*
-TODO: Check variable from task 1 in tracealyzer !
-
-*/
-
 #include <stdbool.h>
 #include <stdint.h>
 
 #include "FreeRTOS.h"
 #include "task.h"
 #include "timers.h"
-#include "queue.h" 
 #include "bsp.h"
 #include "nordic_common.h"
 #include "nrf_drv_clock.h"
 #include "sdk_errors.h"
 #include "app_error.h"
+#include "semphr.h"
 
-#include "extern/exTask.h"
-/* FreeRTOS Timer handler */
-TimerHandle_t   hLedTimer;
-TaskHandle_t    hUnnamedTask;
-QueueHandle_t   hQueue;
+#if LEDS_NUMBER <= 2
+#error "Board is not equipped with enough amount of LEDs"
+#endif
 
-unsigned long   ulVar = 10UL;
-unsigned long   ulVarReceived = 10UL;
-int             taskCounter;
-traceString     uLog;
+#define TASK_DELAY        200           /**< Task delay. Delays a LED0 task for 200 ms */
+#define TIMER_PERIOD      1000          /**< Timer period. LED1 timer will expire after 1000 ms */
 
+TaskHandle_t  led_toggle_task_handle;   /**< Reference to LED0 toggling FreeRTOS task. */
+TaskHandle_t  led1_toggle_task_handle;   /**< Reference to LED0 toggling FreeRTOS task. */
+TaskHandle_t  led3_toggle_task_handle;   /**< Reference to LED0 toggling FreeRTOS task. */
+TimerHandle_t led_toggle_timer_handle;  /**< Reference to LED1 toggling FreeRTOS timer. */
 
+bool isTask1Suspended = false;
 
-/**@ TASK   
- *
- *
- *  
-*/
-void TLedCircle( void * pvParameter )
+static void led1_toggle_task_function (void * pvParameter)
 {
-    UNUSED_PARAMETER ( pvParameter );
-    vTracePrint( uLog, "Hello from task 1 !" );
-    traceString variableRegister = xTraceRegisterString("Variable: %d");
-    int variableForTracing = 0;
+    UNUSED_PARAMETER(pvParameter);
+    traceString controlMark = xTraceRegisterString("task 3");
 
+    while (true)
+    {
+        ulTaskNotifyTake ( pdTRUE, portMAX_DELAY );
+        bsp_board_led_invert(BSP_BOARD_LED_3);
+        vTaskDelay (100);
+        bsp_board_led_invert(BSP_BOARD_LED_3);
+        xTaskNotifyGive ( led3_toggle_task_handle );
+
+        if ( bsp_board_button_state_get ( BSP_BOARD_BUTTON_3 ) )
+        {
+            vTracePrint (controlMark, "Bye bye taks 3 !");
+            isTask1Suspended = true;
+            vTaskSuspend (NULL);
+        }
+    }
+}
+static void led3_toggle_task_function (void * pvParameter)
+{
+    UNUSED_PARAMETER(pvParameter);
+
+    while (true)
+    {
+        ulTaskNotifyTake ( pdTRUE, portMAX_DELAY );
+        bsp_board_led_invert(BSP_BOARD_LED_1);
+        vTaskDelay (100);
+        bsp_board_led_invert(BSP_BOARD_LED_1);
+        xTaskNotifyGive ( led1_toggle_task_handle );
+    }
+}
+/*
+*@ task 3 definition
+*
+*/
+static void externalTask3 ( void * pvParameter )
+{
+  UNUSED_PARAMETER ( pvParameter );
+
+  traceString waterMarkMain = xTraceRegisterString("mian task");
+  traceString waterMarkExternal1 = xTraceRegisterString("task 1");
+  traceString waterMarkExternal2 = xTraceRegisterString("task 2");
+  traceString waterMarkExternal3 = xTraceRegisterString("task 3");
+  UBaseType_t uxHighWaterMark;
+
+  for ( ;; )
+  {
+    vTaskDelay ( 100 );
+    for ( int taskNumber = 0; taskNumber < 4; taskNumber ++ )
+    {
+      switch ( taskNumber )
+      {
+        case 0:
+        /* Calculate the watermark */
+        uxHighWaterMark = uxTaskGetStackHighWaterMark( led_toggle_task_handle );
+        /* Send wm value */
+        vTracePrintF(waterMarkMain, "Calculated Water Mark %u", uxHighWaterMark);
+        break;
+        case 1:
+        uxHighWaterMark = uxTaskGetStackHighWaterMark( led1_toggle_task_handle ); 
+        /* Send wm value */
+        vTracePrintF(waterMarkExternal1, "Calculated Water Mark %u", uxHighWaterMark);
+        break;
+        case 2:
+        uxHighWaterMark = uxTaskGetStackHighWaterMark( led3_toggle_task_handle ); 
+        /* Send wm value */
+        vTracePrintF(waterMarkExternal2, "Calculated Water Mark %u", uxHighWaterMark);
+        break;
+        case 3:
+        uxHighWaterMark = uxTaskGetStackHighWaterMark( NULL ); 
+        vTracePrintF(waterMarkExternal3, "Calculated Water Mark %u", uxHighWaterMark);
+        break;
+      }
+    }
+  }
+
+  //vTaskDelete ( NULL );
+}
+/**@brief LED0 task entry function.
+ *
+ * @param[in] pvParameter   Pointer that will be used as the parameter for the task.
+ */
+static void led_toggle_task_function (void * pvParameter)
+{
+    UNUSED_PARAMETER(pvParameter);
+    vTaskDelay (111);
+    bsp_board_led_invert( BSP_BOARD_LED_0 );
+    xTaskNotifyGive ( led1_toggle_task_handle );
+
+    traceString controlMark = xTraceRegisterString("toggle task");
+    
     for (;;)
     {
-        if ( hQueue != 0 )
-        {
-            if ( xQueueReceive ( hQueue,  &ulVarReceived, (TickType_t) 10 ) )
-            {
-                bsp_board_led_invert ( 1 );
-                variableForTracing ++;
-                vTracePrintF(variableRegister, "Value: %d", variableForTracing);
-            }
+        vTaskDelay ( 100 );
+        eTaskState task1State = eTaskGetState ( led1_toggle_task_handle );
+
+        switch (task1State){
+            case eRunning:    vTracePrint (controlMark, "Task 1 state : Running");      break;
+            case eReady:      vTracePrint (controlMark, "Task 1 state : Ready");        break;
+            case eBlocked:    vTracePrint (controlMark, "Task 1 state : Blocked");      break;
+            case eSuspended:  vTracePrint (controlMark, "Task 1 state : Suspended");    
+                              if ( bsp_board_button_state_get ( BSP_BOARD_BUTTON_1 ) ) 
+                                vTaskResume ( led1_toggle_task_handle );                break;
+            case eDeleted:    vTracePrint (controlMark, "Task 1 state : Deleted");      break;
+            case eInvalid:    vTracePrint (controlMark, "Task 1 state : Invalid");      break;
+            default:          vTracePrint (controlMark, "Task 1 state : NULL! ");       break;
         }
     }
-    vTaskDelete ( NULL );
 }
-/**@  Timer's callback function
- * 
- * 
+
+/**@brief The function to call when the LED1 FreeRTOS timer expires.
  *
-*/
-void vCallbackTimer( void * pvParameter )
+ * @param[in] pvParameter   Pointer that will be used as the parameter for the timer.
+ */
+static void led_toggle_timer_callback (void * pvParameter)
 {
-    UNUSED_PARAMETER ( pvParameter );
-    bsp_board_led_invert ( 0 );
-    taskCounter ++;
-
-    if ( taskCounter == 10 )
-    {
-        vTracePrint( uLog, "Now, I try to reseume task 1" );
-        taskCounter = 0;
-
-        if ( hQueue != 0 )
-        {
-          if ( xQueueSend ( hQueue, (void *) &ulVar, (TickType_t) 10 ) != pdPASS )
-          {
-            vTracePrint( uLog, "Can't send the queue !" );
-          }
-        }
-    }
+    UNUSED_PARAMETER(pvParameter);
+    bsp_board_led_invert(BSP_BOARD_LED_2);
 }
 
-/**@  MAIN
- * 
- * 
- *
-*/
 int main(void)
 {
     ret_code_t err_code;
@@ -144,39 +206,26 @@ int main(void)
     err_code = nrf_drv_clock_init();
     APP_ERROR_CHECK(err_code);
 
-    /* Set taskCounter to 0 */
-    taskCounter = 0;
-
     /* Configure LED-pins as outputs */
     bsp_board_init(BSP_INIT_LEDS);
 
-    /* Register channel */
-    uLog = xTraceRegisterString("UserLog");
+    /* Configure buttons */
+    bsp_board_init(BSP_INIT_BUTTONS);
 
-    /* Create a Queue */
-    hQueue = xQueueCreate ( 10, sizeof( unsigned long ));  
+    /* Create task for LED0 blinking with priority set to 2 */
+    UNUSED_VARIABLE(xTaskCreate(led_toggle_task_function, "LED0", configMINIMAL_STACK_SIZE + 50, NULL, 2, &led_toggle_task_handle));
+    UNUSED_VARIABLE(xTaskCreate(led1_toggle_task_function, "LED1", configMINIMAL_STACK_SIZE + 50, NULL, 2, &led1_toggle_task_handle));
+    UNUSED_VARIABLE(xTaskCreate(led3_toggle_task_function, "LED3", configMINIMAL_STACK_SIZE + 50, NULL, 2, &led3_toggle_task_handle));
+    UNUSED_VARIABLE(xTaskCreate(externalTask3, "task3", configMINIMAL_STACK_SIZE + 50, NULL, 2, NULL));
+    
+    /* Start timer for LED1 blinking */
+    led_toggle_timer_handle = xTimerCreate( "LED1", TIMER_PERIOD, pdTRUE, NULL, led_toggle_timer_callback);
+    UNUSED_VARIABLE(xTimerStart(led_toggle_timer_handle, 0));
 
     /* Activate deep sleep mode */
-    //SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
+    SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
 
-    /* Start task for LEDS circle */
-    xTaskCreate ( TLedCircle, ( const char * ) "LED Circle", 1024, NULL, tskIDLE_PRIORITY, &hUnnamedTask );
-
-    /* Start task laocated inside include file */
-    xTaskCreate ( externalTask1, ( const char * ) "External Task 1", 1024, NULL, tskIDLE_PRIORITY, &hExternTask1 );
-
-    /* Start task laocated inside include file */
-    //xTaskCreate ( externalTask2, ( const char * ) "External Task 2", 1024, NULL, tskIDLE_PRIORITY, &hExternTask2 );
-
-    /* Software timer create */
-    hLedTimer = xTimerCreate ( ( const char * ) "Led Timer", 100, pdTRUE, NULL, vCallbackTimer );
-    
-    /* Timer start */
-    xTimerStart ( hLedTimer, 0 );
-
-    /* Init and start trcing */
     vTraceEnable( TRC_START );
-
     /* Start FreeRTOS scheduler. */
     vTaskStartScheduler();
 
@@ -186,3 +235,7 @@ int main(void)
          * in vTaskStartScheduler function. */
     }
 }
+
+/**
+ *@}
+ **/
