@@ -180,7 +180,7 @@ static void led_toggle_task_function (void * pvParameter)
             case eBlocked:    vTracePrint (controlMark, "Task 1 state : Blocked");      break;
             case eSuspended:  vTracePrint (controlMark, "Task 1 state : Suspended");    
                               if ( bsp_board_button_state_get ( BSP_BOARD_BUTTON_1 ) ) 
-                                vTaskResume ( led1_toggle_task_handle );                break;
+                                {vTaskResume ( led1_toggle_task_handle );};             break;
             case eDeleted:    vTracePrint (controlMark, "Task 1 state : Deleted");      break;
             case eInvalid:    vTracePrint (controlMark, "Task 1 state : Invalid");      break;
             default:          vTracePrint (controlMark, "Task 1 state : NULL! ");       break;
