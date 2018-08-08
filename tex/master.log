@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.6.26)  27 JUN 2018 08:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.6.26)  7 AUG 2018 11:53
 entering extended mode
 **/home/jan/Workspace/git/masters_thesis/tex/master.tex
 (/home/jan/Workspace/git/masters_thesis/tex/master.tex
@@ -470,29 +470,24 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 )
 \c@ContinuedFloat=\count91
 )
-(/home/jan/.miktex/texmfs/install/tex/latex/caption/subcaption.sty
-Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
-\c@subfigure=\count92
-\c@subtable=\count93
-)
 (/home/jan/.miktex/texmfs/install/tex/latex/listings/listings.sty
-\lst@mode=\count94
+\lst@mode=\count92
 \lst@gtempboxa=\box26
 \lst@token=\toks18
-\lst@length=\count95
+\lst@length=\count93
 \lst@currlwidth=\dimen118
-\lst@column=\count96
-\lst@pos=\count97
+\lst@column=\count94
+\lst@pos=\count95
 \lst@lostspace=\dimen119
 \lst@width=\dimen120
-\lst@newlines=\count98
-\lst@lineno=\count99
+\lst@newlines=\count96
+\lst@lineno=\count97
 \lst@maxwidth=\dimen121
 
 (/home/jan/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count100
-\lst@skipnumbers=\count101
+\c@lstnumber=\count98
+\lst@skipnumbers=\count99
 \lst@framebox=\box27
 )
 (/home/jan/.miktex/texmfs/install/tex/latex/listings/listings.cfg
@@ -557,10 +552,10 @@ e.tex
 \pgf@yc=\dimen131
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count102
-\c@pgf@countb=\count103
-\c@pgf@countc=\count104
-\c@pgf@countd=\count105
+\c@pgf@counta=\count100
+\c@pgf@countb=\count101
+\c@pgf@countc=\count102
+\c@pgf@countd=\count103
 \t@pgf@toka=\toks23
 \t@pgf@tokb=\toks24
 \t@pgf@tokc=\toks25
@@ -579,8 +574,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/home/jan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath.co
 de.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count106
-\pgfsyssoftpath@bigbuffer@items=\count107
+\pgfsyssoftpath@smallbuffer@items=\count104
+\pgfsyssoftpath@bigbuffer@items=\count105
 )
 (/home/jan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.co
 de.tex
@@ -610,7 +605,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/home/jan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/home/jan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen132
-\pgfmath@count=\count108
+\pgfmath@count=\count106
 \pgfmath@box=\box29
 \pgfmath@toks=\toks26
 \pgfmath@stack@operand=\toks27
@@ -635,7 +630,7 @@ de.tex)
 (/home/jan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.integer
 arithmetics.code.tex)))
 (/home/jan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count109
+\c@pgfmathroundto@lastzeros=\count107
 ))
 (/home/jan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.code
 .tex
@@ -673,7 +668,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box30
 \pgf@hbox=\box31
 \pgf@layerbox@main=\box32
-\pgf@picture@serial@count=\count110
+\pgf@picture@serial@count=\count108
 )
 (/home/jan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphicstat
 e.code.tex
@@ -708,7 +703,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen156
-\pgf@sys@shading@range@num=\count111
+\pgf@sys@shading@range@num=\count109
 )
 (/home/jan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.code.
 tex
@@ -770,7 +765,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/home/jan/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplothandl
 ers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count112
+\pgf@plot@mark@count=\count110
 \pgfplotmarksize=\dimen161
 )
 \tikz@lastx=\dimen162
@@ -783,19 +778,19 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box36
 \tikz@tempbox=\box37
 \tikz@tempbox@bg=\box38
-\tikztreelevel=\count113
-\tikznumberofchildren=\count114
-\tikznumberofcurrentchild=\count115
-\tikz@fig@count=\count116
+\tikztreelevel=\count111
+\tikznumberofchildren=\count112
+\tikznumberofcurrentchild=\count113
+\tikz@fig@count=\count114
 
 (/home/jan/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.code.
 tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count117
-\pgfmatrixcurrentcolumn=\count118
-\pgf@matrix@numberofcolumns=\count119
+\pgfmatrixcurrentrow=\count115
+\pgfmatrixcurrentcolumn=\count116
+\pgf@matrix@numberofcolumns=\count117
 )
-\tikz@expandcount=\count120
+\tikz@expandcount=\count118
 
 (/home/jan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/
 tikzlibrarytopaths.code.tex
@@ -809,11 +804,17 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 )
 (/home/jan/.miktex/texmfs/install/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count121
+\c@KVtest=\count119
 \sf@farskip=\skip54
 \sf@captopadj=\dimen168
 \sf@capskip=\skip55
 \sf@nearskip=\skip56
+\c@subfigure=\count120
+\c@subfigure@save=\count121
+\c@lofdepth=\count122
+\c@subtable=\count123
+\c@subtable@save=\count124
+\c@lotdepth=\count125
 \sf@top=\skip57
 \sf@bottom=\skip58
 )
@@ -872,14 +873,14 @@ Loading kernel: messages; fonts; allocations: state,
  direction,
 \d@X=\dimen192
 \d@Y=\dimen193
-\K@=\count122
-\KK@=\count123
-\Direction=\count124
+\K@=\count126
+\KK@=\count127
+\Direction=\count128
 \K@dXdY=\dimen194
 \K@dYdX=\dimen195
 \xyread@=\read2
 \xywrite@=\write4
-\csp@=\count125
+\csp@=\count129
 \quotPTK@=\dimen196
 
 utility macros; pictures: \xy, positions,
@@ -900,7 +901,7 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
  Xy-pic option: All features v.3.8
 (/home/jan/.miktex/texmfs/install/tex/generic/xypic/xycurve.tex
  Xy-pic option: Curve and Spline extension v.3.12 curve,
-\crv@cnt@=\count126
+\crv@cnt@=\count130
 \crvpts@=\toks35
 \splinebox@=\box42
 \splineval@=\dimen197
@@ -922,13 +923,13 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
  Xy-pic option: Colour extension v.3.11 loaded)
 (/home/jan/.miktex/texmfs/install/tex/generic/xypic/xymatrix.tex
  Xy-pic option: Matrix feature v.3.14
-\Row=\count127
-\Col=\count128
+\Row=\count131
+\Col=\count132
 \queue@=\toks36
 \queue@@=\toks37
-\qcount@=\count129
-\qcount@@=\count130
-\matrixsize@=\count131
+\qcount@=\count133
+\qcount@@=\count134
+\matrixsize@=\count135
  loaded)
 (/home/jan/.miktex/texmfs/install/tex/generic/xypic/xyarrow.tex
  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
@@ -966,16 +967,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/home/jan/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count132
+\scratchcounter=\count136
 \scratchdimen=\dimen259
 \scratchbox=\box43
-\nofMPsegments=\count133
-\nofMParguments=\count134
+\nofMPsegments=\count137
+\nofMParguments=\count138
 \everyMPshowfont=\toks38
-\MPscratchCnt=\count135
+\MPscratchCnt=\count139
 \MPscratchDim=\dimen260
-\MPnumerator=\count136
-\makeMPintoPDFobject=\count137
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
 \everyMPtoPDFconversion=\toks39
 ) (/home/jan/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1028,31 +1029,17 @@ G,.JBIG2,.JB2,.eps]
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
-
-
-/home/jan/Workspace/git/masters_thesis/tex/master.tex:34: Package subcaption Er
-ror: This package can't be used in cooperation
-(subcaption)                with the subfig package.
-
-See the subcaption package documentation for explanation.
-Type  H <return>  for immediate help
-If you do not understand this error, please take a closer look
-at the documentation of the `subcaption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count138
+\c@lstlisting=\count142
+
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 34.
 
-(/home/jan/.miktex/texmfs/install/tex/latex/lm/ot1lmr.fd)
-
-LaTeX Font Warning: Font shape `OT1/lmr/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 34.
-
+(/home/jan/.miktex/texmfs/install/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 34.
+
 (/home/jan/.miktex/texmfs/install/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1093,209 +1080,67 @@ Overfull \hbox (38.33858pt too wide) in paragraph at lines 38--39
 [1
 
 {/home/jan/.miktex/texmfs/data/pdftex/config/pdftex.map} <./files/pk.png>]
-No file master.toc.
+(master.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 4.
+)
 \tf@toc=\write5
 \openout5 = `master.toc'.
 
-[2
+ [2
 
 ]
 Rozdzia\l  1.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 71.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 71.
-
-Overfull \hbox (19.87288pt too wide) in paragraph at lines 71--75
-\T1/lmr/m/n/10.95 automatyki budynkowej KNX. Sterownik powinien wspóªpracowa¢ z
-e wszystkimi
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--75
-
- []
-
-
-Overfull \hbox (5.27328pt too wide) in paragraph at lines 71--75
-\T1/lmr/m/n/10.95 mikrokontrolerze, która w zale»no±ci od potrzeb mo»e zosta¢ z
-aprogramowana
- []
-
-
-Overfull \hbox (18.90858pt too wide) in paragraph at lines 71--75
-\T1/lmr/m/n/10.95 oprawami ±wietlnymi[], urz¡dzeniami klimatyzacyjno-grzewczymi
-[] oraz roletami.
- []
-
 [3
 
 ]
-Overfull \hbox (4.8287pt too wide) in paragraph at lines 79--80
-[]| \T1/lmr/m/n/10.95 Gªównym celem (i jednocze±nie najwi¦ksz¡ zalet¡) stosowan
-ia systemów
- []
-
-
-Overfull \hbox (21.27173pt too wide) in paragraph at lines 79--80
-\T1/lmr/m/n/10.95 automatyki budynkowej w domach jednorodzinnych oraz budyknach
- usªugowych,
- []
-
-
-Overfull \hbox (6.32916pt too wide) in paragraph at lines 79--80
-\T1/lmr/m/n/10.95 jest oszcz¦dno±¢. Jednak koszty, jakie ponosi inwestor na eta
-pie projektowania
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 25.2232pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4]
 Rozdzia\l  2.
+[4
 
-Overfull \hbox (0.58797pt too wide) in paragraph at lines 88--89
-| \T1/lmr/m/n/10.95 KNX/EIB jest otwartym systemem automatyki budynkowej, co to
- znaczy?
- []
-
-
-Overfull \hbox (14.33711pt too wide) in paragraph at lines 88--89
-\T1/lmr/m/n/10.95 Otó» sªowo otwarty informuje nas o dost¦pno±ci standardu dla 
-zainteresowanych
- []
-
+]
+Rozdzia\l  3.
 [5
 
 ]
-<files/systemy.JPG, id=30, 495.35063pt x 394.47375pt>
-File: files/systemy.JPG Graphic file (type jpg)
-<use files/systemy.JPG>
-Package pdftex.def Info: files/systemy.JPG  used on input line 93.
-(pdftex.def)             Requested size: 247.67471pt x 197.23639pt.
- [6 <./files/systemy.JPG>]
-Rozdzia\l  3.
+Rozdzia\l  4.
+[6
 
-Overfull \hbox (19.54433pt too wide) in paragraph at lines 99--101
-\T1/lmr/bx/n/10.95 KNX, by mógª si¦ on kontaktowa¢ z urz¡dzeniami innych produc
-entów
- []
-
+]
+Rozdzia\l  5.
 [7
 
 ]
-Overfull \hbox (3.70705pt too wide) in paragraph at lines 108--123
- [][] 
- []
+Rozdzia\l  6.
+[8
 
-[8]
-Rozdzia\l  4.
+]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 101.
+
 [9
 
-] [10]
-No file master.lof.
-\tf@lof=\write6
-\openout6 = `master.lof'.
-
-[11
-
-]
-No file master.lot.
-\tf@lot=\write7
-\openout7 = `master.lot'.
-
-[12
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
-[]\T1/lmr/m/it/10.95 ,,KNX System Specifications - Architecture'' \T1/lmr/m/n/1
-0.95 : 06.2004 :
- []
-
-
-Underfull \hbox (badness 1014) in paragraph at lines 149--150
-\T1/lmr/m/it/10.95 ,,Development of a KNX/EIB-based Lighting Control System '' 
-\T1/lmr/m/n/10.95 :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--155
-[]\T1/lmr/m/n/10.95 Mgr in». Andrzej O»adowicz \T1/lmr/m/it/10.95 ,,Analiza por
-ównawcza dwóch
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--155
-\T1/lmr/m/it/10.95 systemów sterowania inteligentnym budynkiem  systemu
- []
-
-
-Underfull \hbox (badness 1931) in paragraph at lines 151--155
-\T1/lmr/m/it/10.95 europejskiego EIB/KNX oraz standardu ameryka«skiego na bazie
-
- []
-
-
-Underfull \hbox (badness 6396) in paragraph at lines 151--155
-\T1/lmr/m/it/10.95 technologii LonWorks'' \T1/lmr/m/n/10.95 Rozprawa Doktorska,
- Kraków, 2006 :
- []
-
-
-Underfull \hbox (badness 4048) in paragraph at lines 155--156
-[]\T1/lmr/m/it/10.95 ,,NCN5120 - Transceiver for KNX Twisted Pair Networks'' \T
-1/lmr/m/n/10.95 :
- []
-
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 157.
-
-(/home/jan/.miktex/texmfs/install/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 157.
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 157.
- [13
-
-] (master.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (master.aux) ) 
 Here is how much of TeX's memory you used:
- 18070 strings out of 495223
- 324344 string characters out of 3181775
- 403874 words of memory out of 3000000
- 20960 multiletter control sequences out of 15000+200000
- 63146 words of font info for 61 fonts, out of 3000000 for 9000
+ 18030 strings out of 495223
+ 324119 string characters out of 3181775
+ 402903 words of memory out of 3000000
+ 20936 multiletter control sequences out of 15000+200000
+ 61409 words of font info for 61 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 55i,11n,54p,3283b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/home/jan/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc}{/home/jan/.mi
-ktex/texmfs/install/fonts/enc/dvips/lm/lm-mathsy.enc}</home/jan/.miktex/texmfs/
-install/fonts/type1/public/lm/lmbx10.pfb></home/jan/.miktex/texmfs/install/font
-s/type1/public/lm/lmbx12.pfb></home/jan/.miktex/texmfs/install/fonts/type1/publ
-ic/lm/lmcsc10.pfb></home/jan/.miktex/texmfs/install/fonts/type1/public/lm/lmr10
-.pfb></home/jan/.miktex/texmfs/install/fonts/type1/public/lm/lmr17.pfb></home/j
-an/.miktex/texmfs/install/fonts/type1/public/lm/lmr6.pfb></home/jan/.miktex/tex
-mfs/install/fonts/type1/public/lm/lmr8.pfb></home/jan/.miktex/texmfs/install/fo
-nts/type1/public/lm/lmr9.pfb></home/jan/.miktex/texmfs/install/fonts/type1/publ
-ic/lm/lmri10.pfb></home/jan/.miktex/texmfs/install/fonts/type1/public/lm/lmsy10
-.pfb>
-Output written on master.pdf (13 pages, 482664 bytes).
+ 55i,6n,54p,3283b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/home/jan/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc}
+</home/jan/.miktex/texmfs/install/fonts/type1/public/lm/lmbx10.pfb></home/jan/.
+miktex/texmfs/install/fonts/type1/public/lm/lmbx12.pfb></home/jan/.miktex/texmf
+s/install/fonts/type1/public/lm/lmcsc10.pfb></home/jan/.miktex/texmfs/install/f
+onts/type1/public/lm/lmr10.pfb></home/jan/.miktex/texmfs/install/fonts/type1/pu
+blic/lm/lmr17.pfb>
+Output written on master.pdf (9 pages, 328622 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
